@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="303CAD2C-8AAE-2EED-7104-E3BDC1D50EA9" name="SPORTCLUB">
+<createdBy>Acer</createdBy>
+<createdTime>2020-02-04 16:49:38 UTC</createdTime>
+<ownerDesignName>Deportes</ownerDesignName>
+<engineerTo>
+<item key="966B94B3-2762-A91A-C1FD-EC63206B06A6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="chairperson" id="1FF36CCB-A04A-A70A-B69F-8EC74A2B3169">
+<createdBy>Acer</createdBy>
+<createdTime>2020-02-04 17:25:53 UTC</createdTime>
+<ownerDesignName>Deportes</ownerDesignName>
+<engineerTo>
+<item key="966B94B3-2762-A91A-C1FD-EC63206B06A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numberofteam" id="CB0FEB2C-6AE2-FBA5-F7CC-A69776DC9DD6">
+<createdBy>Acer</createdBy>
+<createdTime>2020-02-04 17:26:12 UTC</createdTime>
+<ownerDesignName>Deportes</ownerDesignName>
+<engineerTo>
+<item key="966B94B3-2762-A91A-C1FD-EC63206B06A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="locationcity" id="4BA6181D-1A35-F419-E16F-66A4F290DAEE">
+<createdBy>Acer</createdBy>
+<createdTime>2020-02-04 17:26:19 UTC</createdTime>
+<ownerDesignName>Deportes</ownerDesignName>
+<engineerTo>
+<item key="966B94B3-2762-A91A-C1FD-EC63206B06A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

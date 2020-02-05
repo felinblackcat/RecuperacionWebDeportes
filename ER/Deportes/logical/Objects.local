@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="299E97F0-1DD2-C251-9619-B635E17E811C" name="SPORTLEAGUE" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A208BF7C-5A2F-81E8-E2CB-85C9F1B45DFE" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="2F74511E-FBD2-AD2D-AFC7-ABE8AB5DEFA4" name="TEAMMEMBER" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A208BF7C-5A2F-81E8-E2CB-85C9F1B45DFE" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="303CAD2C-8AAE-2EED-7104-E3BDC1D50EA9" name="SPORTCLUB" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A208BF7C-5A2F-81E8-E2CB-85C9F1B45DFE" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="73407D5B-DBB0-F380-9FD7-ED6021921FC5" name="SPORTTEAM" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A208BF7C-5A2F-81E8-E2CB-85C9F1B45DFE" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="78DA92EC-3EFF-884A-B004-CA7FFC988BAD" name="PERSON" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A208BF7C-5A2F-81E8-E2CB-85C9F1B45DFE" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="7DEE1656-2D88-43A6-10E8-0782F402E084" name="SPORTMANAGER" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A208BF7C-5A2F-81E8-E2CB-85C9F1B45DFE" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>
