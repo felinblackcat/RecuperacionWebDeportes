@@ -24,6 +24,7 @@
 			<rdfs:domain rdf:resource="#sportteam"/>
 			<rdfs:range  rdf:resource="xsd:string"/>
 		</rdfs:DataType>
+		
 		<!-- definicion de propiedades  sportleague,sportclub,sportteam-->
 		<rdfs:DataType rdf:ID="name">
 			<rdfs:domain rdf:resource="#person"/>
@@ -91,13 +92,46 @@
 		<rdfs:DataType rdf:ID="birthdate">
 			<rdfs:domain rdf:resource="#sportmanager"/>		
 			<rdfs:range  rdf:resource="xsd:date"/>
-		</rdfs:DataType>		
+		</rdfs:DataType>	
+		
 	<!-- Propiedades de relacion -->		
 		<rdf:Property rdf:ID="chairperson">
 				<rdfs:domain rdf:resource="#sportleague"/>
 				<rdfs:domain rdf:resource="#sportclub"/>
 				<rdfs:domain rdf:resource="#sportteam"/>
 				<rdfs:range  rdf:resource="#person"/>
+		</rdf:Property>		
+		
+		<rdf:Property rdf:ID="manager">				
+				<rdfs:domain rdf:resource="#sportteam"/>
+				<rdfs:range  rdf:resource="#person"/>
+		</rdf:Property>
+		
+		
+		<rdf:Property rdf:ID="playerinteam">				
+				<rdfs:domain rdf:resource="#sportteam"/>
+				<rdfs:range  rdf:resource="#person"/>
+		</rdf:Property>		
+		
+		<rdf:Property rdf:ID="leaguemanager">				
+				<rdfs:domain rdf:resource="#person"/>
+				<rdfs:range  rdf:resource="#sportleague"/>
+		</rdf:Property>		
+		
+		<rdf:Property rdf:ID="currentteammember">				
+				<rdfs:domain rdf:resource="#sportteam"/>
+				<rdfs:range  rdf:resource="#teammember"/>
+		</rdf:Property>
+		
+		
+		<rdf:Property rdf:ID="representa">				
+				<rdfs:domain rdf:resource="#sportclub"/>
+				<rdfs:range  rdf:resource="#sportteam"/>
+		</rdf:Property>
+		
+		<rdf:Property rdf:ID="competidor">				
+				<rdfs:domain rdf:resource="#sportleague"/>
+				<rdfs:range  rdf:resource="#sportteam"/>
 		</rdf:Property>
 		
 </rdf:RDF>
