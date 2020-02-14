@@ -10,7 +10,7 @@
 		<rdfs:Class rdf:ID="sportleague"/>
 		<rdfs:Class rdf:ID="sportteam"/>
 		<rdfs:Class rdf:ID="sportclub"/>
-		<rdfs:Class rdf:ID="teammember">
+		<rdfs:Class rdf:ID="athlete">
 			<rdfs:subClassOf rdf:resource="#person"/>
 		</rdfs:Class>
 		<rdfs:Class rdf:ID="sportmanager">
@@ -70,19 +70,19 @@
 			<rdfs:range  rdf:resource="xsd:string"/>
 		</rdfs:DataType>
 	
-	<!-- definicion de propiedades estaticas para la clase teammember-->
+	<!-- definicion de propiedades estaticas para la clase athlete-->
 	
 		<rdfs:DataType rdf:ID="number">
-			<rdfs:domain rdf:resource="#teammember"/>		
+			<rdfs:domain rdf:resource="#athlete"/>		
 			<rdfs:range  rdf:resource="xsd:int"/>
 		</rdfs:DataType>
 		
 		<rdfs:DataType rdf:ID="mvp">
-			<rdfs:domain rdf:resource="#teammember"/>		
+			<rdfs:domain rdf:resource="#athlete"/>		
 			<rdfs:range  rdf:resource="xsd:string"/>
 		</rdfs:DataType>
 	
-	<!-- definicion de propiedades estaticas para la clase teammember-->
+	<!-- definicion de propiedades estaticas para la clase athlete-->
 	
 		<rdfs:DataType rdf:ID="activeyear">
 			<rdfs:domain rdf:resource="#sportmanager"/>		
@@ -118,9 +118,9 @@
 				<rdfs:range  rdf:resource="#sportleague"/>
 		</rdf:Property>		
 		
-		<rdf:Property rdf:ID="currentteammember">				
+		<rdf:Property rdf:ID="currentathlete">				
 				<rdfs:domain rdf:resource="#sportteam"/>
-				<rdfs:range  rdf:resource="#teammember"/>
+				<rdfs:range  rdf:resource="#athlete"/>
 		</rdf:Property>
 		
 		
@@ -131,6 +131,11 @@
 		
 		<rdf:Property rdf:ID="competidor">				
 				<rdfs:domain rdf:resource="#sportleague"/>
+				<rdfs:range  rdf:resource="#sportteam"/>
+		</rdf:Property>
+		
+		<rdf:Property rdf:ID="currentteam">				
+				<rdfs:domain rdf:resource="#athlete"/>
 				<rdfs:range  rdf:resource="#sportteam"/>
 		</rdf:Property>
 		
