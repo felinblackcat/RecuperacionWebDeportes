@@ -100,9 +100,6 @@
 				<rdfs:range  rdf:resource="#person"/>
 		</rdf:Property>
 		
-		
-		
-
 </rdf:RDF>
 
 	
