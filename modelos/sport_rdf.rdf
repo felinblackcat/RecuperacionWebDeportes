@@ -110,11 +110,6 @@
 				<rdfs:range  rdf:resource="#person"/>
 		</rdf:Property>		
 		
-		<rdf:Property rdf:ID="playerinteam">				
-				<rdfs:domain rdf:resource="#sportteam"/>
-				<rdfs:range  rdf:resource="#person"/>
-		</rdf:Property>		
-		
 		<rdf:Property rdf:ID="leaguemanager">				
 				<rdfs:domain rdf:resource="#person"/>
 				<rdfs:range  rdf:resource="#sportleague"/>
@@ -147,61 +142,250 @@
 		
 		<!--***************** sportleague **************-->
 		
-		<rdf:Description rdf:about="#sportleagueprueba">
+		<rdf:Description rdf:about="#ligafrancesa">
 			<rdf:type rdf:resource="#sportleague"/>
 			<base:name>ligafrancesa</base:name>
 			<base:nit>22456</base:nit>
-			<base:locationcity>medellin</base:locationcity>			
+			<base:locationcity>Marsella</base:locationcity>			
 			<base:numberofteams>5</base:numberofteams>
-			<base:chairperson></base:chairperson>	
+			<base:chairperson>Adrien Le Griego</base:chairperson>	
+			<base:competidor></base:competidor>		
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#ligaespañola">
+			<rdf:type rdf:resource="#sportleague"/>
+			<base:name>ligaespañola</base:name>
+			<base:nit>22458</base:nit>
+			<base:locationcity>Sevilla</base:locationcity>			
+			<base:numberofteams>40</base:numberofteams>
+			<base:chairperson>Francisco</base:chairperson>	
+			<base:competidor></base:competidor>		
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#ligacolombiana">
+			<rdf:type rdf:resource="#sportleague"/>
+			<base:name>ligacolombiana</base:name>
+			<base:nit>3325</base:nit>
+			<base:locationcity>Manizales</base:locationcity>			
+			<base:numberofteams>50</base:numberofteams>
+			<base:chairperson>El capo de sevilla</base:chairperson>	
+			<base:competidor></base:competidor>		
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#ligaeuropea">
+			<rdf:type rdf:resource="#sportleague"/>
+			<base:name>ligafrancesa</base:name>
+			<base:nit>1212</base:nit>
+			<base:locationcity>Praga</base:locationcity>			
+			<base:numberofteams>100</base:numberofteams>
+			<base:chairperson>Archie</base:chairperson>	
+			<base:competidor></base:competidor>		
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#ligainglesa">
+			<rdf:type rdf:resource="#sportleague"/>
+			<base:name>ligainglesa</base:name>
+			<base:nit>89654</base:nit>
+			<base:locationcity>Manchester</base:locationcity>			
+			<base:numberofteams>20</base:numberofteams>
+			<base:chairperson>Ellis</base:chairperson>	
 			<base:competidor></base:competidor>		
 		</rdf:Description>
 
 		<!--***************** sportclub **************-->	
 
-		<rdf:Description rdf:about="#sportclubprueba">
+		<rdf:Description rdf:about="#xanders">
 			<rdf:type rdf:resource="#sportclub"/>
-			<base:name>ligafrancesa</base:name>
-			<base:nit>22456</base:nit>
-			<base:locationcity>medellin</base:locationcity>			
+			<base:name>xanders</base:name>
+			<base:nit>2560</base:nit>
+			<base:locationcity>Rionegro</base:locationcity>			
 			<base:numberofteams>5</base:numberofteams>	
 			<base:chairperson></base:chairperson>
+			<base:representa>Roberto</base:representa>
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#CORSALDEP">
+			<rdf:type rdf:resource="#sportclub"/>
+			<base:name>CORSALDEP</base:name>
+			<base:nit>89631</base:nit>
+			<base:locationcity>Paris</base:locationcity>			
+			<base:numberofteams>10</base:numberofteams>	
+			<base:chairperson>Chandler</base:chairperson>
+			<base:representa></base:representa>
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#soccercity">
+			<rdf:type rdf:resource="#sportclub"/>
+			<base:name>soccercity</base:name>
+			<base:nit>8965</base:nit>
+			<base:locationcity>leningrado</base:locationcity>			
+			<base:numberofteams>2</base:numberofteams>	
+			<base:chairperson>Dean</base:chairperson>
+			<base:representa></base:representa>
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#goldentenis">
+			<rdf:type rdf:resource="#sportclub"/>
+			<base:name>goldentenis</base:name>
+			<base:nit>321</base:nit>
+			<base:locationcity>Estocolmo</base:locationcity>			
+			<base:numberofteams>3</base:numberofteams>	
+			<base:chairperson>Calvin</base:chairperson>
+			<base:representa></base:representa>
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#Sanber">
+			<rdf:type rdf:resource="#sportclub"/>
+			<base:name>Sanber</base:name>
+			<base:nit>123</base:nit>
+			<base:locationcity>Milan</base:locationcity>			
+			<base:numberofteams>2</base:numberofteams>	
+			<base:chairperson>Guason</base:chairperson>
 			<base:representa></base:representa>
 		</rdf:Description>
 		
 		<!--***************** sportteam **************-->
-		<rdf:Description rdf:about="#sportteamprueba">
+		<rdf:Description rdf:about="#scrapmard">
 			<rdf:type rdf:resource="#sportteam"/>
-			<base:name>ligafrancesa</base:name>
-			<base:nit>22456</base:nit>
+			<base:name>scrapmard</base:name>
+			<base:nit>224562</base:nit>
+			<base:locationcity>medellin</base:locationcity>			
+			<base:numberofteams>20</base:numberofteams>	
+			<base:chairperson>Louis</base:chairperson>
+			<base:manager>Noah</base:manager>			
+			<base:currentathlete></base:currentathlete>			
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#bandits">
+			<rdf:type rdf:resource="#sportteam"/>
+			<base:name>bandits</base:name>
+			<base:nit>224568</base:nit>
 			<base:locationcity>medellin</base:locationcity>			
 			<base:numberofteams>5</base:numberofteams>	
-			<base:chairperson></base:chairperson>
-			<base:manager></base:manager>
-			<base:playerinteam></base:playerinteam>
-			<base:currentathlete></base:currentathlete>
-			<base:competidor></base:competidor>
+			<base:chairperson>Nathan</base:chairperson>
+			<base:manager>Arthur</base:manager>			
+			<base:currentathlete></base:currentathlete>			
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#dallascowboys">
+			<rdf:type rdf:resource="#sportteam"/>
+			<base:name>dallascowboys</base:name>
+			<base:nit>2245610</base:nit>
+			<base:locationcity>medellin</base:locationcity>			
+			<base:numberofteams>10</base:numberofteams>	
+			<base:chairperson>Ivanova</base:chairperson>
+			<base:manager>Vólkova</base:manager>			
+			<base:currentathlete></base:currentathlete>			
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#lakers">
+			<rdf:type rdf:resource="#sportteam"/>
+			<base:name>lakers</base:name>
+			<base:nit>2245625</base:nit>
+			<base:locationcity>medellin</base:locationcity>			
+			<base:numberofteams>15</base:numberofteams>	
+			<base:chairperson>Dariya</base:chairperson>
+			<base:manager>Aleksandra</base:manager>			
+			<base:currentathlete></base:currentathlete>			
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#celtics">
+			<rdf:type rdf:resource="#sportteam"/>
+			<base:name>celtics</base:name>
+			<base:nit>22456547</base:nit>
+			<base:locationcity>medellin</base:locationcity>			
+			<base:numberofteams>12</base:numberofteams>	
+			<base:chairperson>Klavdiya</base:chairperson>
+			<base:manager>Irina</base:manager>			
+			<base:currentathlete></base:currentathlete>			
 		</rdf:Description>
 		
 		<!--***************** athlete **************-->
 		
-		<rdf:Description rdf:about="#athleteprueba">
+		<rdf:Description rdf:about="#Rustam">
 			<rdf:type rdf:resource="#athlete"/>
-			<base:name>ligafrancesa</base:name>
-			<base:height>ligafrancesa</base:height>
-			<base:birthplace>22456</base:birthplace>
-			<base:leaguemanager></base:leaguemanager>
-			<base:currentleage></base:currentleage>
-			
+			<base:name>Rustam</base:name>
+			<base:height></base:height>
+			<base:birthplace>Bogota</base:birthplace>
+			<base:leaguemanager>Luana</base:leaguemanager>
+			<base:currentleage>ligainglesa</base:currentleage>			
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#Yuliya">
+			<rdf:type rdf:resource="#athlete"/>
+			<base:name>Yuliya</base:name>
+			<base:height></base:height>
+			<base:birthplace>Cali</base:birthplace>
+			<base:leaguemanager>Kayla</base:leaguemanager>
+			<base:currentleage>ligafrancesa</base:currentleage>			
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#Marina">
+			<rdf:type rdf:resource="#athlete"/>
+			<base:name>Marina</base:name>
+			<base:height></base:height>
+			<base:birthplace>Armenia</base:birthplace>
+			<base:leaguemanager>Jandiara</base:leaguemanager>
+			<base:currentleage>ligafrancesa</base:currentleage>			
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#Filipp">
+			<rdf:type rdf:resource="#athlete"/>
+			<base:name>Filipp</base:name>
+			<base:height></base:height>
+			<base:birthplace>Estocolmo</base:birthplace>
+			<base:leaguemanager>Flavia</base:leaguemanager>
+			<base:currentleage>ligaespañola</base:currentleage>			
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#Grigoriy">
+			<rdf:type rdf:resource="#athlete"/>
+			<base:name>Grigoriy</base:name>
+			<base:height></base:height>
+			<base:birthplace>Cingapur</base:birthplace>
+			<base:leaguemanager>Adelia</base:leaguemanager>
+			<base:currentleage>ligaespañola</base:currentleage>			
 		</rdf:Description>
 		<!--***************** sportmanager **************-->		
 		
-		<rdf:Description rdf:about="#sportmanagerprueba">
+		<rdf:Description rdf:about="#Miguel">
 			<rdf:type rdf:resource="#sportmanager"/>
-			<base:name>ligafrancesa</base:name>
+			<base:name>Miguel</base:name>
 			<base:activeyear>5</base:activeyear>
 			<base:birthdate>20/05/92</base:birthdate>
-			<base:leaguemanager></base:leaguemanager>
+			<base:leaguemanager>Adelia</base:leaguemanager>
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#jose">
+			<rdf:type rdf:resource="#sportmanager"/>
+			<base:name>jose</base:name>
+			<base:activeyear>10</base:activeyear>
+			<base:birthdate>01/02/87</base:birthdate>
+			<base:leaguemanager>Adelia</base:leaguemanager>
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#Alberto">
+			<rdf:type rdf:resource="#sportmanager"/>
+			<base:name>Alberto</base:name>
+			<base:activeyear>7</base:activeyear>
+			<base:birthdate>06/06/96</base:birthdate>
+			<base:leaguemanager>Adelia</base:leaguemanager>
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#Iguarin">
+			<rdf:type rdf:resource="#sportmanager"/>
+			<base:name>Iguarin</base:name>
+			<base:activeyear>3</base:activeyear>
+			<base:birthdate>05/01/2000</base:birthdate>
+			<base:leaguemanager>Flavia</base:leaguemanager>
+		</rdf:Description>
+		
+		<rdf:Description rdf:about="#Maria">
+			<rdf:type rdf:resource="#sportmanager"/>
+			<base:name>Maria</base:name>
+			<base:activeyear>2</base:activeyear>
+			<base:birthdate>8/3/2002</base:birthdate>
+			<base:leaguemanager>Flavia</base:leaguemanager>
 		</rdf:Description>
 		
 		
