@@ -1,0 +1,1478 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#atleta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#club_deportivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#equipo_deportivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#liga_deportiva"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#persona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#representante"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#competidor_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#entrenador_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#equipo_actual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#gerente_de_liga"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#liga_actual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#representa_a"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#altura"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#años_activo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#edad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#estado_jugador"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_nacimiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lugar_nacimiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numero_de_equipos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#presidente"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sexo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ubicacion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persona1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persona2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persona3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persona4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persona5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persona6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persona7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#atleta1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#atleta2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#atleta3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#atleta4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#atleta5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#atleta6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#atleta7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#club_deportivo1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#club_deportivo2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#club_deportivo3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#club_deportivo4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#club_deportivo5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#club_deportivo6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#club_deportivo7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#equipo_deportivo2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#equipo_deportivo5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#equipo_deportivo6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#equipo_deportivo7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#liga_deportiva3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#liga_deportiva4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#liga_deportiva5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#liga_deportiva6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#liga_deportiva7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#representante1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#representante2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#representante3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#representante4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#representante5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#representante6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#representante7"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#atleta"/>
+        <Class IRI="#persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#representante"/>
+        <Class IRI="#persona"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#persona"/>
+        <NamedIndividual IRI="#Persona1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#persona"/>
+        <NamedIndividual IRI="#Persona2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#persona"/>
+        <NamedIndividual IRI="#Persona3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#persona"/>
+        <NamedIndividual IRI="#Persona4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#persona"/>
+        <NamedIndividual IRI="#Persona5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#persona"/>
+        <NamedIndividual IRI="#Persona6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#persona"/>
+        <NamedIndividual IRI="#Persona7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atleta"/>
+        <NamedIndividual IRI="#atleta1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atleta"/>
+        <NamedIndividual IRI="#atleta2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atleta"/>
+        <NamedIndividual IRI="#atleta3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atleta"/>
+        <NamedIndividual IRI="#atleta4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atleta"/>
+        <NamedIndividual IRI="#atleta5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atleta"/>
+        <NamedIndividual IRI="#atleta6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#atleta"/>
+        <NamedIndividual IRI="#atleta7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#club_deportivo"/>
+        <NamedIndividual IRI="#club_deportivo1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#club_deportivo"/>
+        <NamedIndividual IRI="#club_deportivo2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#club_deportivo"/>
+        <NamedIndividual IRI="#club_deportivo3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#club_deportivo"/>
+        <NamedIndividual IRI="#club_deportivo4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#club_deportivo"/>
+        <NamedIndividual IRI="#club_deportivo5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#club_deportivo"/>
+        <NamedIndividual IRI="#club_deportivo6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#club_deportivo"/>
+        <NamedIndividual IRI="#club_deportivo7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#equipo_deportivo"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#equipo_deportivo"/>
+        <NamedIndividual IRI="#equipo_deportivo2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#equipo_deportivo"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#equipo_deportivo"/>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#equipo_deportivo"/>
+        <NamedIndividual IRI="#equipo_deportivo5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#equipo_deportivo"/>
+        <NamedIndividual IRI="#equipo_deportivo6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#equipo_deportivo"/>
+        <NamedIndividual IRI="#equipo_deportivo7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#liga_deportiva"/>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#liga_deportiva"/>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#liga_deportiva"/>
+        <NamedIndividual IRI="#liga_deportiva3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#liga_deportiva"/>
+        <NamedIndividual IRI="#liga_deportiva4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#liga_deportiva"/>
+        <NamedIndividual IRI="#liga_deportiva5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#liga_deportiva"/>
+        <NamedIndividual IRI="#liga_deportiva6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#liga_deportiva"/>
+        <NamedIndividual IRI="#liga_deportiva7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#representante"/>
+        <NamedIndividual IRI="#representante1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#representante"/>
+        <NamedIndividual IRI="#representante2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#representante"/>
+        <NamedIndividual IRI="#representante3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#representante"/>
+        <NamedIndividual IRI="#representante4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#representante"/>
+        <NamedIndividual IRI="#representante5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#representante"/>
+        <NamedIndividual IRI="#representante6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#representante"/>
+        <NamedIndividual IRI="#representante7"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Persona1"/>
+        <NamedIndividual IRI="#Persona5"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Persona2"/>
+        <NamedIndividual IRI="#Persona6"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Persona3"/>
+        <NamedIndividual IRI="#Persona7"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#atleta1"/>
+        <NamedIndividual IRI="#atleta5"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#atleta2"/>
+        <NamedIndividual IRI="#atleta6"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#atleta3"/>
+        <NamedIndividual IRI="#atleta7"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#club_deportivo1"/>
+        <NamedIndividual IRI="#club_deportivo5"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#club_deportivo2"/>
+        <NamedIndividual IRI="#club_deportivo6"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#club_deportivo3"/>
+        <NamedIndividual IRI="#club_deportivo7"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#club_deportivo5"/>
+        <NamedIndividual IRI="#equipo_deportivo7"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#equipo_deportivo2"/>
+        <NamedIndividual IRI="#equipo_deportivo6"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+        <NamedIndividual IRI="#liga_deportiva5"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+        <NamedIndividual IRI="#liga_deportiva6"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#liga_deportiva4"/>
+        <NamedIndividual IRI="#liga_deportiva7"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#representante1"/>
+        <NamedIndividual IRI="#representante5"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#representante2"/>
+        <NamedIndividual IRI="#representante6"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#representante4"/>
+        <NamedIndividual IRI="#representante7"/>
+    </SameIndividual>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#club_deportivo2"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#club_deportivo4"/>
+        <NamedIndividual IRI="#equipo_deportivo7"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gerente_de_liga"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gerente_de_liga"/>
+        <NamedIndividual IRI="#Persona2"/>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <NamedIndividual IRI="#atleta1"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#liga_actual"/>
+        <NamedIndividual IRI="#atleta1"/>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <NamedIndividual IRI="#atleta2"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#liga_actual"/>
+        <NamedIndividual IRI="#atleta2"/>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <NamedIndividual IRI="#atleta3"/>
+        <NamedIndividual IRI="#equipo_deportivo5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <NamedIndividual IRI="#atleta4"/>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#liga_actual"/>
+        <NamedIndividual IRI="#atleta4"/>
+        <NamedIndividual IRI="#liga_deportiva3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <NamedIndividual IRI="#atleta5"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#liga_actual"/>
+        <NamedIndividual IRI="#atleta5"/>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <NamedIndividual IRI="#atleta6"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#liga_actual"/>
+        <NamedIndividual IRI="#atleta6"/>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <NamedIndividual IRI="#atleta7"/>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competidor_de"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competidor_de"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+        <NamedIndividual IRI="#liga_deportiva5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#representa_a"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+        <NamedIndividual IRI="#club_deportivo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#representa_a"/>
+        <NamedIndividual IRI="#equipo_deportivo2"/>
+        <NamedIndividual IRI="#club_deportivo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competidor_de"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competidor_de"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+        <NamedIndividual IRI="#liga_deportiva6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#representa_a"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+        <NamedIndividual IRI="#club_deportivo2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competidor_de"/>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+        <NamedIndividual IRI="#liga_deportiva3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#representa_a"/>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+        <NamedIndividual IRI="#club_deportivo3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#representa_a"/>
+        <NamedIndividual IRI="#equipo_deportivo5"/>
+        <NamedIndividual IRI="#club_deportivo4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#representa_a"/>
+        <NamedIndividual IRI="#equipo_deportivo6"/>
+        <NamedIndividual IRI="#club_deportivo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competidor_de"/>
+        <NamedIndividual IRI="#equipo_deportivo7"/>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competidor_de"/>
+        <NamedIndividual IRI="#equipo_deportivo7"/>
+        <NamedIndividual IRI="#liga_deportiva5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#representa_a"/>
+        <NamedIndividual IRI="#equipo_deportivo7"/>
+        <NamedIndividual IRI="#club_deportivo4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gerente_de_liga"/>
+        <NamedIndividual IRI="#liga_deportiva3"/>
+        <NamedIndividual IRI="#liga_deportiva3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#entrenador_de"/>
+        <NamedIndividual IRI="#representante1"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#entrenador_de"/>
+        <NamedIndividual IRI="#representante2"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#entrenador_de"/>
+        <NamedIndividual IRI="#representante3"/>
+        <NamedIndividual IRI="#equipo_deportivo5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#entrenador_de"/>
+        <NamedIndividual IRI="#representante4"/>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competidor_de"/>
+        <NamedIndividual IRI="#representante5"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#entrenador_de"/>
+        <NamedIndividual IRI="#representante6"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#entrenador_de"/>
+        <NamedIndividual IRI="#representante7"/>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <Literal>jose guerra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Persona2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">57</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Persona2"/>
+        <Literal>adam silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#Persona2"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Persona3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Persona3"/>
+        <Literal>amanda duffy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#Persona3"/>
+        <Literal>mujer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Persona4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">43</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Persona4"/>
+        <Literal>albert costa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#Persona4"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Persona5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Persona5"/>
+        <Literal>director liga bbva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#Persona5"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Persona6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">57</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Persona6"/>
+        <Literal>director nba adam silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#Persona6"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Persona7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Persona7"/>
+        <Literal>directora national women soccer league amanda duffy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#Persona7"/>
+        <Literal>mujer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altura"/>
+        <NamedIndividual IRI="#atleta1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">170</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#atleta1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <NamedIndividual IRI="#atleta1"/>
+        <Literal>argentina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#atleta1"/>
+        <Literal>lionel messi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#atleta1"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altura"/>
+        <NamedIndividual IRI="#atleta2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">206</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#atleta2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <NamedIndividual IRI="#atleta2"/>
+        <Literal>estados unidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#atleta2"/>
+        <Literal>lebron james</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#atleta2"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#atleta3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <NamedIndividual IRI="#atleta3"/>
+        <Literal>kenia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#atleta3"/>
+        <Literal>chris froome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#atleta3"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#atleta4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <NamedIndividual IRI="#atleta4"/>
+        <Literal>estados unidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#atleta4"/>
+        <Literal>alex morgan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#atleta4"/>
+        <Literal>mujer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altura"/>
+        <NamedIndividual IRI="#atleta5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">188</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#atleta5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <NamedIndividual IRI="#atleta5"/>
+        <Literal>argentina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#atleta5"/>
+        <Literal>la pulga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#atleta5"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altura"/>
+        <NamedIndividual IRI="#atleta6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">206</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#atleta6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <NamedIndividual IRI="#atleta6"/>
+        <Literal>estados unidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#atleta6"/>
+        <Literal>king james</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#atleta6"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#atleta7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <NamedIndividual IRI="#atleta7"/>
+        <Literal>kenia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#atleta7"/>
+        <Literal>chris clive froome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo"/>
+        <NamedIndividual IRI="#atleta7"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#club_deportivo1"/>
+        <Literal>barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#club_deportivo1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#club_deportivo1"/>
+        <Literal>barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#club_deportivo2"/>
+        <Literal>los angeles lakers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#club_deportivo2"/>
+        <Literal>los angeles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#club_deportivo3"/>
+        <Literal>orlando city</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#club_deportivo3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#club_deportivo3"/>
+        <Literal>orlando</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#club_deportivo4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#club_deportivo4"/>
+        <Literal>Sky</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#club_deportivo4"/>
+        <Literal>reino unido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#club_deportivo5"/>
+        <Literal>futbol club barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#club_deportivo5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#club_deportivo5"/>
+        <Literal>españa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#club_deportivo6"/>
+        <Literal>Equipo de baloncesto lakers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#club_deportivo6"/>
+        <Literal>estados unidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#club_deportivo7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#club_deportivo7"/>
+        <Literal>orlando city soccer club</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#club_deportivo7"/>
+        <Literal>estados unidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+        <Literal>barcelona a</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#equipo_deportivo1"/>
+        <Literal>barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#equipo_deportivo2"/>
+        <Literal>barcelona b</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#equipo_deportivo2"/>
+        <Literal>barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+        <Literal>los angeles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#equipo_deportivo3"/>
+        <Literal>los angeles lakers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+        <Literal>orlando pride</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#equipo_deportivo4"/>
+        <Literal>orlando</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#equipo_deportivo5"/>
+        <Literal>team ineos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#equipo_deportivo5"/>
+        <Literal>reino unido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#equipo_deportivo6"/>
+        <Literal>españa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#equipo_deportivo6"/>
+        <Literal>filial club barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#equipo_deportivo7"/>
+        <Literal>reino unido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#equipo_deportivo7"/>
+        <Literal>team sky</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+        <Literal>liga bbva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#liga_deportiva1"/>
+        <Literal>españa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+        <Literal>nba</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#liga_deportiva2"/>
+        <Literal>estados unidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#liga_deportiva3"/>
+        <Literal>national women soccer league</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#liga_deportiva3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#liga_deportiva3"/>
+        <Literal>estados unidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#liga_deportiva4"/>
+        <Literal>copa davis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#liga_deportiva4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#liga_deportiva5"/>
+        <Literal>primera division del futbol español</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#liga_deportiva5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#liga_deportiva5"/>
+        <Literal>españa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#liga_deportiva6"/>
+        <Literal>national basketball association</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#liga_deportiva6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#liga_deportiva6"/>
+        <Literal>estados unidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#liga_deportiva7"/>
+        <Literal>david cup</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <NamedIndividual IRI="#liga_deportiva7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#liga_deportiva7"/>
+        <Literal>australia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <NamedIndividual IRI="#representante1"/>
+        <Literal>27/09/1958</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#representante1"/>
+        <Literal>quique setien</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <NamedIndividual IRI="#representante2"/>
+        <Literal>21/06/1973</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#representante2"/>
+        <Literal>frank vogel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <NamedIndividual IRI="#representante3"/>
+        <Literal>23/04/1979</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#representante3"/>
+        <Literal>nicolas portal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <NamedIndividual IRI="#representante4"/>
+        <Literal>23/03/1983</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#representante4"/>
+        <Literal>marc skinner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <NamedIndividual IRI="#representante5"/>
+        <Literal>27/09/1958</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#representante5"/>
+        <Literal>entrenador fc barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <NamedIndividual IRI="#representante6"/>
+        <Literal>21/06/1973</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#representante6"/>
+        <Literal>entrenador los angeles lakers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <NamedIndividual IRI="#representante7"/>
+        <Literal>23/03/1983</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <NamedIndividual IRI="#representante7"/>
+        <Literal>entrenador orlando pride</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#competidor_de"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#entrenador_de"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#gerente_de_liga"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#representa_a"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#competidor_de"/>
+        <Class IRI="#equipo_deportivo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#entrenador_de"/>
+        <Class IRI="#persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <Class IRI="#atleta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#gerente_de_liga"/>
+        <Class IRI="#persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#liga_actual"/>
+        <Class IRI="#atleta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#representa_a"/>
+        <Class IRI="#equipo_deportivo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#competidor_de"/>
+        <Class IRI="#liga_deportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#entrenador_de"/>
+        <Class IRI="#equipo_deportivo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#equipo_actual"/>
+        <Class IRI="#equipo_deportivo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#gerente_de_liga"/>
+        <Class IRI="#liga_deportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#liga_actual"/>
+        <Class IRI="#liga_deportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#representa_a"/>
+        <Class IRI="#club_deportivo"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#altura"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#años_activo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#edad"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#estado_jugador"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#presidente"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sexo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ubicacion"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#altura"/>
+        <Class IRI="#atleta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#años_activo"/>
+        <Class IRI="#representante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#edad"/>
+        <Class IRI="#persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#estado_jugador"/>
+        <Class IRI="#persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <Class IRI="#representante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <Class IRI="#atleta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#club_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#equipo_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#liga_deportiva"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <Class IRI="#club_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <Class IRI="#equipo_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <Class IRI="#liga_deportiva"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#presidente"/>
+        <Class IRI="#equipo_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sexo"/>
+        <Class IRI="#persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ubicacion"/>
+        <Class IRI="#club_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ubicacion"/>
+        <Class IRI="#equipo_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ubicacion"/>
+        <Class IRI="#liga_deportiva"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#altura"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#años_activo"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#edad"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#estado_jugador"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lugar_nacimiento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numero_de_equipos"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#presidente"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sexo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ubicacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:short"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
