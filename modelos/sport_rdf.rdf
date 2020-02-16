@@ -305,7 +305,7 @@
 		<rdf:Description rdf:about="#Rustam">
 			<rdf:type rdf:resource="#athlete"/>
 			<base:name>Rustam</base:name>
-			<base:height></base:height>
+			<base:height>1.85</base:height>
 			<base:birthplace>Bogota</base:birthplace>
 			<base:leaguemanager>Luana</base:leaguemanager>
 			<base:currentleage>ligainglesa</base:currentleage>			
@@ -314,7 +314,7 @@
 		<rdf:Description rdf:about="#Yuliya">
 			<rdf:type rdf:resource="#athlete"/>
 			<base:name>Yuliya</base:name>
-			<base:height></base:height>
+			<base:height>1.78</base:height>
 			<base:birthplace>Cali</base:birthplace>
 			<base:leaguemanager>Kayla</base:leaguemanager>
 			<base:currentleage>ligafrancesa</base:currentleage>			
@@ -323,7 +323,7 @@
 		<rdf:Description rdf:about="#Marina">
 			<rdf:type rdf:resource="#athlete"/>
 			<base:name>Marina</base:name>
-			<base:height></base:height>
+			<base:height>1.80</base:height>
 			<base:birthplace>Armenia</base:birthplace>
 			<base:leaguemanager>Jandiara</base:leaguemanager>
 			<base:currentleage>ligafrancesa</base:currentleage>			
@@ -332,7 +332,7 @@
 		<rdf:Description rdf:about="#Filipp">
 			<rdf:type rdf:resource="#athlete"/>
 			<base:name>Filipp</base:name>
-			<base:height></base:height>
+			<base:height>1.75</base:height>
 			<base:birthplace>Estocolmo</base:birthplace>
 			<base:leaguemanager>Flavia</base:leaguemanager>
 			<base:currentleage>ligaespañola</base:currentleage>			
@@ -341,7 +341,7 @@
 		<rdf:Description rdf:about="#Grigoriy">
 			<rdf:type rdf:resource="#athlete"/>
 			<base:name>Grigoriy</base:name>
-			<base:height></base:height>
+			<base:height>1.70</base:height>
 			<base:birthplace>Cingapur</base:birthplace>
 			<base:leaguemanager>Adelia</base:leaguemanager>
 			<base:currentleage>ligaespañola</base:currentleage>			
