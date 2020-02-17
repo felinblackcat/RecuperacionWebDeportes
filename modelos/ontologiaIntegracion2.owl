@@ -1,0 +1,2587 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologiaIntegracion1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontologiaIntegracion1">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nflCode"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentTeamMember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Rower"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/stateOfOriginTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SoftballLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.sport.com#person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/GolfPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/GolfLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#competidor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Bodybuilder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/teamManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Organisation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/heightAgainst"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/firstDriverTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/FieldHockeyLeague"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/hopmanCup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/RugbyPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/HandballPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/VideogamesLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/RugbyLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#activeyear"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/sportSpecialty"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nationalTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/RadioControlledRacingLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/AmericanFootballLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BadmintonPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/soccerLeagueRelegated"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/stateOfOriginPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/managerClub"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/britishOpen"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/athleticsDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/sportCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/oldTeamCoached"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/teamTitle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Boxer"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/juniorTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Wrestler"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/playerInTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/collegeHof"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/DartsPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/CanadianFootballTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/trainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Jockey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/PoloLeague"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/lastProMatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/coachClub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="xsd:double"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/VolleyballPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BoxingLeague"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#altura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/HandballLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInSingleFemale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/CurlingLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/InlineHockeyLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInSingle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Cyclist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/AthleticsPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Canoeist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.sport.com#athlete"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/otherSportsExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/VolleyballLeague"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/draftTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/PokerPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/GaelicGamesPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#numberofteams"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/qatarClassic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#representa"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/draftLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/HighDiver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#currentleage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#sexo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/CyclingTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInDouble"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BaseballTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/secondTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/PersonFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/trainerClub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="xsd:float"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/generalManager"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/probowlPick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SoccerLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BaseballPlayer"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/heisman"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/youthClub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/MartialArtist"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/tournamentOfChampions"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/ncbhof"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="xsd:string"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BasketballTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/coachedTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#birthdate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/soccerLeagueWinner"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/teamCoached"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/fibahof"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/hof"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/club"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#locationcity"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/selectionPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BasketballPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/LacrosseLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/debutTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.sport.com#sportclub"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/wins"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/leagueManager"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/ithfDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Gymnast"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/GridironFootballPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/AmericanFootballTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/FormulaOneRacing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SoccerManager"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/league"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nflTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/describes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentTeamManager"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#edad"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#leaguemanager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Fencer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInDoubleMale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SquashPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/prospectLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/leadTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/ncaaTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2007/05/powder-s#describedby"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SpeedwayTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/AustralianRulesFootballPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BullFighter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#sex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/FormulaOneTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationalTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/worldChampionTitleYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/soccerLeaguePromoted"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/PaintballLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/TableTennisPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#chairperson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#playerstatus"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/ncaaTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/CyclingLeague"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/managerClub"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nflSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/NetballPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/WinterSportPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Swimmer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#presidente"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/manager"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/thirdTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/formerTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BowlingLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/AustralianFootballTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/coachClub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.sport.com#sportmanager"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representa_a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInDoubleFemale"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#birthplace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/MotorcycleRacingLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#manager"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/draftPosition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/fedCup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/MotorsportRacer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/AutoRacingLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#id"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/europeanChampionship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SnookerPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#nit"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/youthClub"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/backhand"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/oldTeamCoached"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentTeam"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#estado_jugador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/HandballTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.wikidata.org/entity/Q623109"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/AustralianFootballLeague"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/worldTeamCup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/TennisPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/TennisLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/champion"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/selectionYear"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/heightAttack"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/juniorTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#name"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/mvp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/CricketTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/stateOfOriginTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="xsd:int"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentLeague"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/horseRidingDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Surfer"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SoccerClub"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/amateurTeam"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/IceHockeyLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/SportsTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/poleDriverTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SpeedwayLeague"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/asiaChampionship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentMember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/CanadianFootballLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/draftTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/teamCoached"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/RugbyClub"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/numberOfTeams"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#competidor_de"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/worldOpen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/HorseRider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SoccerPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/ChessPlayer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#lugar_nacimiento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/LacrossePlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/espnId"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInMixedDouble"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/ArcherPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#currentathlete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SportsClub"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/superbowlWin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#años_activo"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/finalLostTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/CricketLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/proTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/formerTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/supplementalDraftRound"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInSingleMale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/WaterPoloPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nflTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/stateOfOriginYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#fecha_nacimiento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nationalChampionship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/HockeyClub"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/firstProMatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Cricketer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/MixedMartialArtsLeague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/HockeyTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/TeamMember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BasketballLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SportsManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/BaseballLeague"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/coachSeason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/club"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/fastestDriverTeam"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/teamPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.sport.com#height"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/ncaaSeason"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/laterality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/debutTeam"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+        <Class IRI="http://www.sport.com#athlete"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsClub"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsClub"/>
+        <Class IRI="http://www.sport.com#sportclub"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+        <Class IRI="http://www.wikidata.org/entity/Q623109"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsManager"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsManager"/>
+        <Class IRI="http://www.sport.com#sportmanager"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+        <Class IRI="http://schema.org/SportsTeam"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <Class IRI="http://www.sport.com#athlete"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <Class IRI="http://www.sport.com#sportclub"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <Class IRI="http://www.sport.com#sportmanager"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.sport.com#sportleague"/>
+        <Class IRI="http://www.wikidata.org/entity/Q623109"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/AmericanFootballLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/AmericanFootballTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/ArcherPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/AthleticsPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/AustralianFootballLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/AustralianFootballTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/AustralianRulesFootballPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/AutoRacingLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BadmintonPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BaseballLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BaseballPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BaseballTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BasketballLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BasketballPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BasketballTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Bodybuilder"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BowlingLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Boxer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BoxingLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/BullFighter"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/CanadianFootballLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/CanadianFootballTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Canoeist"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/ChessPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/CricketLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/CricketTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Cricketer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/CurlingLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/CyclingLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/CyclingTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Cyclist"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/DartsPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Fencer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/FieldHockeyLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/FormulaOneRacing"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/FormulaOneTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/GaelicGamesPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/GolfLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/GolfPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/GridironFootballPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Gymnast"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/HandballLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/HandballPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/HandballTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/HighDiver"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/HockeyClub"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsClub"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/HockeyTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/HorseRider"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/IceHockeyLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/InlineHockeyLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Jockey"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/LacrosseLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/LacrossePlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/MartialArtist"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/MixedMartialArtsLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/MotorcycleRacingLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/MotorsportRacer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/NetballPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/PaintballLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/PokerPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/PoloLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/RadioControlledRacingLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Rower"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/RugbyClub"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/RugbyLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/RugbyPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SnookerPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SoccerClub"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SoccerLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SoccerManager"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsManager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SoccerPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SoftballLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SpeedwayLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SpeedwayTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SportsClub"/>
+        <Class IRI="http://dbpedia.org/ontology/Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SportsManager"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SquashPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Surfer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Swimmer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/TableTennisPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/TeamMember"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/TennisLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/TennisPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/VideogamesLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/VolleyballLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/VolleyballPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/WaterPoloPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/WinterSportPlayer"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Wrestler"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.sport.com#athlete"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.sport.com#sportmanager"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </SubClassOf>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentLeague"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentLeague"/>
+        <ObjectProperty IRI="http://www.sport.com#currentleage"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentTeam"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentTeam"/>
+        <ObjectProperty IRI="http://www.sport.com#currentathlete"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/leagueManager"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/leagueManager"/>
+        <ObjectProperty IRI="http://www.sport.com#leaguemanager"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/teamManager"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/teamManager"/>
+        <ObjectProperty IRI="http://www.sport.com#manager"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#competidor_de"/>
+        <ObjectProperty IRI="http://www.sport.com#competidor"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de"/>
+        <ObjectProperty IRI="http://www.sport.com#manager"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual"/>
+        <ObjectProperty IRI="http://www.sport.com#currentathlete"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga"/>
+        <ObjectProperty IRI="http://www.sport.com#leaguemanager"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual"/>
+        <ObjectProperty IRI="http://www.sport.com#currentleage"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representa_a"/>
+        <ObjectProperty IRI="http://www.sport.com#representa"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/person"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#competidor_de"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representa_a"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/club"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/coachClub"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/debutTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/draftTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/formerTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/juniorTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/managerClub"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationalTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/ncaaTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nflTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/oldTeamCoached"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/person"/>
+        <Class IRI="http://dbpedia.org/ontology/PersonFunction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/stateOfOriginTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/teamCoached"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/youthClub"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#competidor_de"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representa_a"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#activeyear"/>
+        <Class IRI="http://www.sport.com#sportmanager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#age"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#birthdate"/>
+        <Class IRI="http://www.sport.com#sportmanager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#birthplace"/>
+        <Class IRI="http://www.sport.com#athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#chairperson"/>
+        <Class IRI="http://www.sport.com#sportclub"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#chairperson"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#chairperson"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#competidor"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#currentathlete"/>
+        <Class IRI="http://www.sport.com#athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#currentleage"/>
+        <Class IRI="http://www.sport.com#athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#height"/>
+        <Class IRI="http://www.sport.com#athlete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#id"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#leaguemanager"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#locationcity"/>
+        <Class IRI="http://www.sport.com#sportclub"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#locationcity"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#locationcity"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#manager"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#name"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#name"/>
+        <Class IRI="http://www.sport.com#sportclub"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#name"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#name"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#nit"/>
+        <Class IRI="http://www.sport.com#sportclub"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#nit"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#nit"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#numberofteams"/>
+        <Class IRI="http://www.sport.com#sportclub"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#numberofteams"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#numberofteams"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#playerstatus"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#representa"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.sport.com#sex"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/amateurTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/champion"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInDouble"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInDoubleFemale"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInDoubleMale"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInMixedDouble"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInSingle"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInSingleFemale"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/championInSingleMale"/>
+        <Class IRI="http://dbpedia.org/ontology/Athlete"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/coachedTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/currentTeamManager"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/fastestDriverTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/firstDriverTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/leadTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/league"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/leagueManager"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/person"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/poleDriverTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/proTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/prospectLeague"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsLeague"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/secondTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/soccerLeaguePromoted"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/soccerLeagueRelegated"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/soccerLeagueWinner"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/team"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/teamManager"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/thirdTeam"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/trainerClub"/>
+        <Class IRI="http://dbpedia.org/ontology/SportsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#competidor_de"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representa_a"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#activeyear"/>
+        <Class IRI="xsd:date"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#age"/>
+        <Class IRI="xsd:date"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#birthdate"/>
+        <Class IRI="xsd:date"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#birthplace"/>
+        <Class IRI="xsd:string"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#chairperson"/>
+        <Class IRI="http://www.sport.com#person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#competidor"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#currentathlete"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#currentleage"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#height"/>
+        <Class IRI="xsd:float"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#id"/>
+        <Class IRI="xsd:string"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#leaguemanager"/>
+        <Class IRI="http://www.sport.com#sportleague"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#locationcity"/>
+        <Class IRI="xsd:string"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#manager"/>
+        <Class IRI="http://www.sport.com#sportteam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#name"/>
+        <Class IRI="xsd:string"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#nit"/>
+        <Class IRI="xsd:string"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#numberofteams"/>
+        <Class IRI="xsd:int"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#playerstatus"/>
+        <Class IRI="xsd:double"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#representa"/>
+        <Class IRI="http://www.sport.com#sportclub"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.sport.com#sex"/>
+        <Class IRI="xsd:string"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#altura"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#años_activo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#edad"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#estado_jugador"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#fecha_nacimiento"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#lugar_nacimiento"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#presidente"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#sexo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#altura"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#años_activo"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#edad"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#estado_jugador"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#fecha_nacimiento"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#lugar_nacimiento"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#presidente"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#sexo"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion"/>
+        <Class IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#altura"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#años_activo"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#edad"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#estado_jugador"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#fecha_nacimiento"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#lugar_nacimiento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#presidente"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#sexo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:short"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/defines"/>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/defines"/>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+        <IRI>http://dbpedia.org/ontology/SportsClub</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/defines"/>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/defines"/>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/defines"/>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/defines"/>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+        <IRI>http://dbpedia.org/ontology/person</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Athlet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">athlete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">athlète</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">atleet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">atleta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <Literal xml:lang="ga" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lúthchleasaí</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <Literal xml:lang="el" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">αθλητής</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <Literal xml:lang="ja" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">アスリート</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <Literal xml:lang="ko" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">운동 선수</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2007/05/powder-s#describedby"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+        <IRI>http://mappings.dbpedia.org/index.php/OntologyClass:Athlete</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/SportsClub</IRI>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsClub</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sportverein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsClub</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sportclub</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsClub</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sports club</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2007/05/powder-s#describedby"/>
+        <IRI>http://dbpedia.org/ontology/SportsClub</IRI>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <IRI>http://dbpedia.org/ontology/SportsClub</IRI>
+        <IRI>http://mappings.dbpedia.org/index.php/OntologyClass:SportsClub</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A group of sports teams or individual athletes that compete against each other in a specific sport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sportliga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">liga deportiva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ligue sportive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sport competitie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sports league</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <Literal xml:lang="el" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Αθλητική Ομοσπονδία</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <Literal xml:lang="ja" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">スポーツリーグ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <Literal xml:lang="ko" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">스포츠 리그</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2007/05/powder-s#describedby"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+        <IRI>http://mappings.dbpedia.org/index.php/OntologyClass:SportsLeague</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">According to the french label sub Soccer, trainership could be meant. However, here a Sportsmanager is interpreted as a member of the board of a sporting club.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <Literal xml:lang="el" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Σύμφωνα με τη γαλλική ετικέτα Soccer,μπορεί να εννοείται ο προπονητής.Παρ&apos;όλα αυτα,εδώ ένας αθλητικός μάνατζερ μεταφράζεται ως ένα μέλος συμβουλίου ενός αθλητικού κλαμπ.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sportmanager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">director deportivo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sportbestuurder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sports manager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <Literal xml:lang="el" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">αθλητικός μάνατζερ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2007/05/powder-s#describedby"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+        <IRI>http://mappings.dbpedia.org/index.php/OntologyClass:SportsManager</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sportmannschaft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sports team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sportteam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">équipe sportive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+        <Literal xml:lang="el" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ομαδικά αθλήματα</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+        <Literal xml:lang="ja" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">スポーツチーム</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2007/05/powder-s#describedby"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+        <IRI>http://mappings.dbpedia.org/index.php/OntologyClass:SportsTeam</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/person</IRI>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/person</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/person</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/person</IRI>
+        <Literal xml:lang="el" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">άτομο</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2007/05/powder-s#describedby"/>
+        <IRI>http://dbpedia.org/ontology/person</IRI>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <IRI>http://dbpedia.org/ontology/person</IRI>
+        <IRI>http://mappings.dbpedia.org/index.php/OntologyProperty:person</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/describes"/>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/describes"/>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+        <IRI>http://dbpedia.org/ontology/SportsClub</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/describes"/>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/describes"/>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+        <IRI>http://dbpedia.org/ontology/SportsManager</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/describes"/>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://open.vocab.org/terms/describes"/>
+        <IRI>http://dbpedia.org/ontology/data/definitions.ttl</IRI>
+        <IRI>http://dbpedia.org/ontology/person</IRI>
+    </AnnotationAssertion>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/club"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/coachClub"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentLeague"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/debutTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/draftTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/formerTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/juniorTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/managerClub"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nationalTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/ncaaTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nflTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/oldTeamCoached"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/stateOfOriginTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/teamCoached"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/youthClub"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/asiaChampionship"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/athleticsDiscipline"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/backhand"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/britishOpen"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/coachSeason"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/collegeHof"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentMember"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentSeason"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/currentTeamMember"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/draftLeague"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/draftPosition"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/espnId"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/europeanChampionship"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/fedCup"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/fibahof"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/finalLostTeam"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/firstProMatch"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/generalManager"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/heightAgainst"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/heightAttack"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/heisman"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/hof"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/hopmanCup"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/horseRidingDiscipline"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/ithfDate"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/lastProMatch"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/laterality"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/manager"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/mvp"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nationalChampionship"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/ncaaSeason"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/ncbhof"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nflCode"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/nflSeason"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/numberOfTeams"/>
+        <IRI>http://dbpedia.org/ontology/SportsLeague</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/otherSportsExperience"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/playerInTeam"/>
+        <IRI>http://dbpedia.org/ontology/SportsTeam</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/probowlPick"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/qatarClassic"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/selectionPoint"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/selectionYear"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/sportCountry"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/sportSpecialty"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/stateOfOriginPoint"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/stateOfOriginYear"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/superbowlWin"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/supplementalDraftRound"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/teamPoint"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/teamTitle"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/tournamentOfChampions"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/trainer"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/wins"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/worldChampionTitleYear"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/worldOpen"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/worldTeamCup"/>
+        <IRI>http://dbpedia.org/ontology/Athlete</IRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
