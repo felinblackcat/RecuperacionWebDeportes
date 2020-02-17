@@ -1,0 +1,326 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns0: <http://www.sport.> .
+
+<http://www.sport.com#person> a rdfs:Class .
+<http://www.sport.com#sportleague> a rdfs:Class .
+<http://www.sport.com#sportteam> a rdfs:Class .
+<http://www.sport.com#sportclub> a rdfs:Class .
+<http://www.sport.com#athlete>
+  a rdfs:Class ;
+  rdfs:subClassOf <http://www.sport.com#person> .
+
+<http://www.sport.com#sportmanager>
+  a rdfs:Class ;
+  rdfs:subClassOf <http://www.sport.com#person> .
+
+<http://www.sport.com#nit>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#sportleague>, <http://www.sport.com#sportclub>, <http://www.sport.com#sportteam> ;
+  rdfs:range xsd:string .
+
+<http://www.sport.com#name>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#person>, <http://www.sport.com#sportleague>, <http://www.sport.com#sportclub>, <http://www.sport.com#sportteam> ;
+  rdfs:range xsd:string .
+
+<http://www.sport.com#numberofteams>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#sportleague>, <http://www.sport.com#sportclub>, <http://www.sport.com#sportteam> ;
+  rdfs:range xsd:int .
+
+<http://www.sport.com#locationcity>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#sportleague>, <http://www.sport.com#sportclub>, <http://www.sport.com#sportteam> ;
+  rdfs:range xsd:string .
+
+<http://www.sport.com#playerstatus>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#person> ;
+  rdfs:range xsd:double .
+
+<http://www.sport.com#age>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#person> ;
+  rdfs:range xsd:date .
+
+<http://www.sport.com#sex>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#person> ;
+  rdfs:range xsd:string .
+
+<http://www.sport.com#id>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#person> ;
+  rdfs:range xsd:string .
+
+<http://www.sport.com#height>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#athlete> ;
+  rdfs:range xsd:float .
+
+<http://www.sport.com#birthplace>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#athlete> ;
+  rdfs:range xsd:string .
+
+<http://www.sport.com#activeyear>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#sportmanager> ;
+  rdfs:range xsd:date .
+
+<http://www.sport.com#birthdate>
+  a rdfs:DataType ;
+  rdfs:domain <http://www.sport.com#sportmanager> ;
+  rdfs:range xsd:date .
+
+<http://www.sport.com#chairperson>
+  a rdf:Property ;
+  rdfs:domain <http://www.sport.com#sportleague>, <http://www.sport.com#sportclub>, <http://www.sport.com#sportteam> ;
+  rdfs:range <http://www.sport.com#person> .
+
+<http://www.sport.com#manager>
+  a rdf:Property ;
+  rdfs:domain <http://www.sport.com#sportteam> ;
+  rdfs:range <http://www.sport.com#person> .
+
+<http://www.sport.com#leaguemanager>
+  a rdf:Property ;
+  rdfs:domain <http://www.sport.com#person> ;
+  rdfs:range <http://www.sport.com#sportleague> .
+
+<http://www.sport.com#representa>
+  a rdf:Property ;
+  rdfs:domain <http://www.sport.com#sportclub> ;
+  rdfs:range <http://www.sport.com#sportteam> .
+
+<http://www.sport.com#competidor>
+  a rdf:Property ;
+  rdfs:domain <http://www.sport.com#sportleague> ;
+  rdfs:range <http://www.sport.com#sportteam> .
+
+<http://www.sport.com#currentleage>
+  a rdf:Property ;
+  rdfs:domain <http://www.sport.com#athlete> ;
+  rdfs:range <http://www.sport.com#sportleague> .
+
+<http://www.sport.com#currentathlete>
+  a rdf:Property ;
+  rdfs:domain <http://www.sport.com#sportteam> ;
+  rdfs:range <http://www.sport.com#athlete> .
+
+<http://www.sport.com#ligafrancesa>
+  a <http://www.sport.com#sportleague> ;
+  ns0:comname "ligafrancesa" ;
+  ns0:comnit "22456" ;
+  ns0:comlocationcity "Marsella" ;
+  ns0:comnumberofteams "5" ;
+  ns0:comchairperson "Adrien Le Griego" ;
+  ns0:comcompetidor "" .
+
+ns0:com#ligaespañola
+  a ns0:com#sportleague ;
+  ns0:comname "ligaespañola" ;
+  ns0:comnit "22458" ;
+  ns0:comlocationcity "Sevilla" ;
+  ns0:comnumberofteams "40" ;
+  ns0:comchairperson "Francisco" ;
+  ns0:comcompetidor "" .
+
+ns0:com#ligacolombiana
+  a ns0:com#sportleague ;
+  ns0:comname "ligacolombiana" ;
+  ns0:comnit "3325" ;
+  ns0:comlocationcity "Manizales" ;
+  ns0:comnumberofteams "50" ;
+  ns0:comchairperson "El capo de sevilla" ;
+  ns0:comcompetidor "" .
+
+ns0:com#ligaeuropea
+  a ns0:com#sportleague ;
+  ns0:comname "ligafrancesa" ;
+  ns0:comnit "1212" ;
+  ns0:comlocationcity "Praga" ;
+  ns0:comnumberofteams "100" ;
+  ns0:comchairperson "Archie" ;
+  ns0:comcompetidor "" .
+
+ns0:com#ligainglesa
+  a ns0:com#sportleague ;
+  ns0:comname "ligainglesa" ;
+  ns0:comnit "89654" ;
+  ns0:comlocationcity "Manchester" ;
+  ns0:comnumberofteams "20" ;
+  ns0:comchairperson "Ellis" ;
+  ns0:comcompetidor "" .
+
+ns0:com#xanders
+  a ns0:com#sportclub ;
+  ns0:comname "xanders" ;
+  ns0:comnit "2560" ;
+  ns0:comlocationcity "Rionegro" ;
+  ns0:comnumberofteams "5" ;
+  ns0:comchairperson "" ;
+  ns0:comrepresenta "Roberto" .
+
+ns0:com#CORSALDEP
+  a ns0:com#sportclub ;
+  ns0:comname "CORSALDEP" ;
+  ns0:comnit "89631" ;
+  ns0:comlocationcity "Paris" ;
+  ns0:comnumberofteams "10" ;
+  ns0:comchairperson "Chandler" ;
+  ns0:comrepresenta "" .
+
+ns0:com#soccercity
+  a ns0:com#sportclub ;
+  ns0:comname "soccercity" ;
+  ns0:comnit "8965" ;
+  ns0:comlocationcity "leningrado" ;
+  ns0:comnumberofteams "2" ;
+  ns0:comchairperson "Dean" ;
+  ns0:comrepresenta "" .
+
+ns0:com#goldentenis
+  a ns0:com#sportclub ;
+  ns0:comname "goldentenis" ;
+  ns0:comnit "321" ;
+  ns0:comlocationcity "Estocolmo" ;
+  ns0:comnumberofteams "3" ;
+  ns0:comchairperson "Calvin" ;
+  ns0:comrepresenta "" .
+
+ns0:com#Sanber
+  a ns0:com#sportclub ;
+  ns0:comname "Sanber" ;
+  ns0:comnit "123" ;
+  ns0:comlocationcity "Milan" ;
+  ns0:comnumberofteams "2" ;
+  ns0:comchairperson "Guason" ;
+  ns0:comrepresenta "" .
+
+ns0:com#scrapmard
+  a ns0:com#sportteam ;
+  ns0:comname "scrapmard" ;
+  ns0:comnit "224562" ;
+  ns0:comlocationcity "medellin" ;
+  ns0:comnumberofteams "20" ;
+  ns0:comchairperson "Louis" ;
+  ns0:commanager "Noah" ;
+  ns0:comcurrentathlete "" .
+
+ns0:com#bandits
+  a ns0:com#sportteam ;
+  ns0:comname "bandits" ;
+  ns0:comnit "224568" ;
+  ns0:comlocationcity "medellin" ;
+  ns0:comnumberofteams "5" ;
+  ns0:comchairperson "Nathan" ;
+  ns0:commanager "Arthur" ;
+  ns0:comcurrentathlete "" .
+
+ns0:com#dallascowboys
+  a ns0:com#sportteam ;
+  ns0:comname "dallascowboys" ;
+  ns0:comnit "2245610" ;
+  ns0:comlocationcity "medellin" ;
+  ns0:comnumberofteams "10" ;
+  ns0:comchairperson "Ivanova" ;
+  ns0:commanager "Vólkova" ;
+  ns0:comcurrentathlete "" .
+
+ns0:com#lakers
+  a ns0:com#sportteam ;
+  ns0:comname "lakers" ;
+  ns0:comnit "2245625" ;
+  ns0:comlocationcity "medellin" ;
+  ns0:comnumberofteams "15" ;
+  ns0:comchairperson "Dariya" ;
+  ns0:commanager "Aleksandra" ;
+  ns0:comcurrentathlete "" .
+
+ns0:com#celtics
+  a ns0:com#sportteam ;
+  ns0:comname "celtics" ;
+  ns0:comnit "22456547" ;
+  ns0:comlocationcity "medellin" ;
+  ns0:comnumberofteams "12" ;
+  ns0:comchairperson "Klavdiya" ;
+  ns0:commanager "Irina" ;
+  ns0:comcurrentathlete "" .
+
+ns0:com#Rustam
+  a ns0:com#athlete ;
+  ns0:comname "Rustam" ;
+  ns0:comheight "1.85" ;
+  ns0:combirthplace "Bogota" ;
+  ns0:comleaguemanager "Luana" ;
+  ns0:comcurrentleage "ligainglesa" .
+
+ns0:com#Yuliya
+  a ns0:com#athlete ;
+  ns0:comname "Yuliya" ;
+  ns0:comheight "1.78" ;
+  ns0:combirthplace "Cali" ;
+  ns0:comleaguemanager "Kayla" ;
+  ns0:comcurrentleage "ligafrancesa" .
+
+ns0:com#Marina
+  a ns0:com#athlete ;
+  ns0:comname "Marina" ;
+  ns0:comheight "1.80" ;
+  ns0:combirthplace "Armenia" ;
+  ns0:comleaguemanager "Jandiara" ;
+  ns0:comcurrentleage "ligafrancesa" .
+
+ns0:com#Filipp
+  a ns0:com#athlete ;
+  ns0:comname "Filipp" ;
+  ns0:comheight "1.75" ;
+  ns0:combirthplace "Estocolmo" ;
+  ns0:comleaguemanager "Flavia" ;
+  ns0:comcurrentleage "ligaespañola" .
+
+ns0:com#Grigoriy
+  a ns0:com#athlete ;
+  ns0:comname "Grigoriy" ;
+  ns0:comheight "1.70" ;
+  ns0:combirthplace "Cingapur" ;
+  ns0:comleaguemanager "Adelia" ;
+  ns0:comcurrentleage "ligaespañola" .
+
+ns0:com#Miguel
+  a ns0:com#sportmanager ;
+  ns0:comname "Miguel" ;
+  ns0:comactiveyear "5" ;
+  ns0:combirthdate "20/05/92" ;
+  ns0:comleaguemanager "Adelia" .
+
+ns0:com#jose
+  a ns0:com#sportmanager ;
+  ns0:comname "jose" ;
+  ns0:comactiveyear "10" ;
+  ns0:combirthdate "01/02/87" ;
+  ns0:comleaguemanager "Adelia" .
+
+ns0:com#Alberto
+  a ns0:com#sportmanager ;
+  ns0:comname "Alberto" ;
+  ns0:comactiveyear "7" ;
+  ns0:combirthdate "06/06/96" ;
+  ns0:comleaguemanager "Adelia" .
+
+ns0:com#Iguarin
+  a ns0:com#sportmanager ;
+  ns0:comname "Iguarin" ;
+  ns0:comactiveyear "3" ;
+  ns0:combirthdate "05/01/2000" ;
+  ns0:comleaguemanager "Flavia" .
+
+ns0:com#Maria
+  a ns0:com#sportmanager ;
+  ns0:comname "Maria" ;
+  ns0:comactiveyear "2" ;
+  ns0:combirthdate "8/3/2002" ;
+  ns0:comleaguemanager "Flavia" .
