@@ -1,0 +1,2625 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologiaIntegracion1"
+     xml:base="http://www.semanticweb.org/ontologiaIntegracion1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://open.vocab.org/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:www="http://www.sport.com#"
+     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:deportes="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:ontology="http://dbpedia.org/ontology/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologiaIntegracion1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/asiaChampionship -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/asiaChampionship">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/athleticsDiscipline -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/athleticsDiscipline">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/backhand -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/backhand">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/britishOpen -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/britishOpen">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/club -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/club">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/coachClub -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/coachClub">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/coachSeason -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/coachSeason">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/collegeHof -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/collegeHof">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/currentLeague -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/currentLeague">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/currentMember -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/currentMember">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/currentSeason -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/currentSeason">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/currentTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/currentTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/currentTeamMember -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/currentTeamMember">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/debutTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/debutTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/draftLeague -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/draftLeague">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/draftPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/draftPosition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/draftTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/draftTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/espnId -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/espnId">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/europeanChampionship -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/europeanChampionship">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/fedCup -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/fedCup">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/fibahof -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/fibahof">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/finalLostTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/finalLostTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/firstProMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/firstProMatch">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/formerTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/formerTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/generalManager -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/generalManager">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/heightAgainst -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/heightAgainst">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/heightAttack -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/heightAttack">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/heisman -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/heisman">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/hof -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hof">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/hopmanCup -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hopmanCup">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/horseRidingDiscipline -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/horseRidingDiscipline">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ithfDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/ithfDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/juniorTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/juniorTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/lastProMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/lastProMatch">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/laterality -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/laterality">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/manager -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/manager">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/managerClub -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/managerClub">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/mvp -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mvp">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nationalChampionship -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalChampionship">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nationalTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ncaaSeason -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/ncaaSeason">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ncaaTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/ncaaTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ncbhof -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/ncbhof">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nflCode -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nflCode">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nflSeason -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nflSeason">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nflTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nflTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/numberOfTeams -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/numberOfTeams">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/oldTeamCoached -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/oldTeamCoached">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/otherSportsExperience -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/otherSportsExperience">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/playerInTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/playerInTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/probowlPick -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/probowlPick">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/qatarClassic -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/qatarClassic">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/selectionPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/selectionPoint">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/selectionYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/selectionYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/sportCountry -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sportCountry">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/sportSpecialty -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sportSpecialty">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/stateOfOriginPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/stateOfOriginPoint">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/stateOfOriginTeam -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/stateOfOriginTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/stateOfOriginYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/stateOfOriginYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/superbowlWin -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/superbowlWin">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/supplementalDraftRound -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/supplementalDraftRound">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/teamCoached -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/teamCoached">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/teamPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/teamPoint">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/teamTitle -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/teamTitle">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/tournamentOfChampions -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/tournamentOfChampions">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/trainer -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/trainer">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/wins -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/wins">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/worldChampionTitleYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldChampionTitleYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/worldOpen -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldOpen">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/worldTeamCup -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldTeamCup">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/youthClub -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/youthClub">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://open.vocab.org/terms/defines -->
+
+    <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/defines"/>
+    
+
+
+    <!-- http://open.vocab.org/terms/describes -->
+
+    <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/describes"/>
+    
+
+
+    <!-- http://www.w3.org/2007/05/powder-s#describedby -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2007/05/powder-s#describedby"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/amateurTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/amateurTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/champion -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/champion">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/championInDouble -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/championInDouble">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/championInDoubleFemale -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/championInDoubleFemale">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/championInDoubleMale -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/championInDoubleMale">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/championInMixedDouble -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/championInMixedDouble">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/championInSingle -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/championInSingle">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/championInSingleFemale -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/championInSingleFemale">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/championInSingleMale -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/championInSingleMale">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/club -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/club">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/coachClub -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/coachClub">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/coachedTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/coachedTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/currentLeague -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/currentLeague">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual"/>
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#currentleage"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/currentTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/currentTeam">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual"/>
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#currentathlete"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/currentTeamManager -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/currentTeamManager">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/debutTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/debutTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/draftTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/draftTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/fastestDriverTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/fastestDriverTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/firstDriverTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/firstDriverTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/formerTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/formerTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/juniorTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/juniorTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/leadTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/leadTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/league -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/league">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/leagueManager -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/leagueManager">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga"/>
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#leaguemanager"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/managerClub -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/managerClub">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nationalTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/nationalTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ncaaTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/ncaaTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nflTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/nflTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/oldTeamCoached -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/oldTeamCoached">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/person -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/person">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/PersonFunction"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="de">Person</rdfs:label>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <rdfs:label xml:lang="el">άτομο</rdfs:label>
+        <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyProperty:person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/poleDriverTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/poleDriverTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/proTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/proTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/prospectLeague -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/prospectLeague">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/secondTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/secondTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/soccerLeaguePromoted -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/soccerLeaguePromoted">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/soccerLeagueRelegated -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/soccerLeagueRelegated">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/soccerLeagueWinner -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/soccerLeagueWinner">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/stateOfOriginTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/stateOfOriginTeam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/team -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/team">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/teamCoached -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/teamCoached">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/teamManager -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/teamManager">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de"/>
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#manager"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/thirdTeam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/thirdTeam">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/trainerClub -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/trainerClub">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/youthClub -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/youthClub">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#competidor_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#competidor_de">
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#competidor"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de">
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#manager"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual">
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#currentathlete"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga">
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#leaguemanager"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual">
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#currentleage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representa_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representa_a">
+        <owl:equivalentProperty rdf:resource="http://www.sport.com#representa"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#activeyear -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#activeyear">
+        <rdfs:domain rdf:resource="http://www.sport.com#sportmanager"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#age -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#age">
+        <rdfs:domain rdf:resource="http://www.sport.com#person"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#birthdate -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#birthdate">
+        <rdfs:domain rdf:resource="http://www.sport.com#sportmanager"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#birthplace -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#birthplace">
+        <rdfs:domain rdf:resource="http://www.sport.com#athlete"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#chairperson -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#chairperson">
+        <rdfs:domain rdf:resource="http://www.sport.com#sportclub"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportleague"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportteam"/>
+        <rdfs:range rdf:resource="http://www.sport.com#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#competidor -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#competidor">
+        <rdfs:domain rdf:resource="http://www.sport.com#sportteam"/>
+        <rdfs:range rdf:resource="http://www.sport.com#sportleague"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#currentathlete -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#currentathlete">
+        <rdfs:domain rdf:resource="http://www.sport.com#athlete"/>
+        <rdfs:range rdf:resource="http://www.sport.com#sportteam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#currentleage -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#currentleage">
+        <rdfs:domain rdf:resource="http://www.sport.com#athlete"/>
+        <rdfs:range rdf:resource="http://www.sport.com#sportleague"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#height -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#height">
+        <rdfs:domain rdf:resource="http://www.sport.com#athlete"/>
+        <rdfs:range rdf:resource="xsd:float"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#id -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#id">
+        <rdfs:domain rdf:resource="http://www.sport.com#person"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#leaguemanager -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#leaguemanager">
+        <rdfs:domain rdf:resource="http://www.sport.com#person"/>
+        <rdfs:range rdf:resource="http://www.sport.com#sportleague"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#locationcity -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#locationcity">
+        <rdfs:domain rdf:resource="http://www.sport.com#sportclub"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportleague"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportteam"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#manager -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#manager">
+        <rdfs:domain rdf:resource="http://www.sport.com#person"/>
+        <rdfs:range rdf:resource="http://www.sport.com#sportteam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#name -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#name">
+        <rdfs:domain rdf:resource="http://www.sport.com#person"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportclub"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportleague"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportteam"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#nit -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#nit">
+        <rdfs:domain rdf:resource="http://www.sport.com#sportclub"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportleague"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportteam"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#numberofteams -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#numberofteams">
+        <rdfs:domain rdf:resource="http://www.sport.com#sportclub"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportleague"/>
+        <rdfs:domain rdf:resource="http://www.sport.com#sportteam"/>
+        <rdfs:range rdf:resource="xsd:int"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#playerstatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#playerstatus">
+        <rdfs:domain rdf:resource="http://www.sport.com#person"/>
+        <rdfs:range rdf:resource="xsd:double"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#representa -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#representa">
+        <rdfs:domain rdf:resource="http://www.sport.com#sportteam"/>
+        <rdfs:range rdf:resource="http://www.sport.com#sportclub"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sport.com#sex -->
+
+    <owl:ObjectProperty rdf:about="http://www.sport.com#sex">
+        <rdfs:domain rdf:resource="http://www.sport.com#person"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#altura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#altura">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#años_activo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#años_activo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#edad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#estado_jugador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#estado_jugador">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#fecha_nacimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#fecha_nacimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#lugar_nacimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#lugar_nacimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#presidente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#presidente">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#sexo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#sexo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/AmericanFootballLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AmericanFootballLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/AmericanFootballTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AmericanFootballTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ArcherPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ArcherPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Athlete -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Athlete">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <owl:equivalentClass rdf:resource="http://www.sport.com#athlete"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="de">Athlet</rdfs:label>
+        <rdfs:label xml:lang="en">athlete</rdfs:label>
+        <rdfs:label xml:lang="fr">athlète</rdfs:label>
+        <rdfs:label xml:lang="nl">atleet</rdfs:label>
+        <rdfs:label xml:lang="it">atleta</rdfs:label>
+        <rdfs:label xml:lang="ga">lúthchleasaí</rdfs:label>
+        <rdfs:label xml:lang="el">αθλητής</rdfs:label>
+        <rdfs:label xml:lang="ja">アスリート</rdfs:label>
+        <rdfs:label xml:lang="ko">운동 선수</rdfs:label>
+        <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/AthleticsPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AthleticsPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/AustralianFootballLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AustralianFootballLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/AustralianFootballTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AustralianFootballTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/AustralianRulesFootballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AustralianRulesFootballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/AutoRacingLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AutoRacingLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BadmintonPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BadmintonPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BaseballLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BaseballLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BaseballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BaseballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BaseballTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BaseballTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BasketballLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BasketballLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BasketballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BasketballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BasketballTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BasketballTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Bodybuilder -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Bodybuilder">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BowlingLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BowlingLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Boxer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Boxer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BoxingLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BoxingLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BullFighter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BullFighter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CanadianFootballLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CanadianFootballLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CanadianFootballTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CanadianFootballTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Canoeist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Canoeist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ChessPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ChessPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CricketLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CricketLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CricketTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CricketTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Cricketer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Cricketer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CurlingLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CurlingLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CyclingLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CyclingLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CyclingTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CyclingTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Cyclist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Cyclist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/DartsPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/DartsPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Fencer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Fencer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/FieldHockeyLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/FieldHockeyLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/FormulaOneRacing -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/FormulaOneRacing">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/FormulaOneTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/FormulaOneTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/GaelicGamesPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/GaelicGamesPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/GolfLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/GolfLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/GolfPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/GolfPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/GridironFootballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/GridironFootballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Gymnast -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Gymnast">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HandballLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HandballLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HandballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HandballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HandballTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HandballTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HighDiver -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HighDiver">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HockeyClub -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HockeyClub">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsClub"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HockeyTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HockeyTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HorseRider -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HorseRider">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/IceHockeyLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/IceHockeyLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/InlineHockeyLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/InlineHockeyLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Jockey -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Jockey">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/LacrosseLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/LacrosseLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/LacrossePlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/LacrossePlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MartialArtist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MartialArtist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MixedMartialArtsLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MixedMartialArtsLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MotorcycleRacingLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MotorcycleRacingLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MotorsportRacer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MotorsportRacer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/NetballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/NetballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Organisation -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Organisation"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PaintballLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PaintballLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <owl:equivalentClass rdf:resource="http://www.sport.com#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PersonFunction -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PersonFunction"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PokerPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PokerPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PoloLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PoloLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/RadioControlledRacingLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/RadioControlledRacingLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Rower -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Rower">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/RugbyClub -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/RugbyClub">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/RugbyLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/RugbyLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/RugbyPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/RugbyPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SnookerPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SnookerPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SoccerClub -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SoccerClub">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SoccerLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SoccerLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SoccerManager -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SoccerManager">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SoccerPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SoccerPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SoftballLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SoftballLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SpeedwayLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SpeedwayLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SpeedwayTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SpeedwayTeam">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SportsClub -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SportsClub">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <owl:equivalentClass rdf:resource="http://www.sport.com#sportclub"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="de">Sportverein</rdfs:label>
+        <rdfs:label xml:lang="nl">sportclub</rdfs:label>
+        <rdfs:label xml:lang="en">sports club</rdfs:label>
+        <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SportsClub"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SportsLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SportsLeague">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <owl:equivalentClass rdf:resource="http://www.sport.com#sportleague"/>
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q623109"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+        <rdfs:comment xml:lang="en">A group of sports teams or individual athletes that compete against each other in a specific sport.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="de">Sportliga</rdfs:label>
+        <rdfs:label xml:lang="es">liga deportiva</rdfs:label>
+        <rdfs:label xml:lang="fr">ligue sportive</rdfs:label>
+        <rdfs:label xml:lang="nl">sport competitie</rdfs:label>
+        <rdfs:label xml:lang="en">sports league</rdfs:label>
+        <rdfs:label xml:lang="el">Αθλητική Ομοσπονδία</rdfs:label>
+        <rdfs:label xml:lang="ja">スポーツリーグ</rdfs:label>
+        <rdfs:label xml:lang="ko">스포츠 리그</rdfs:label>
+        <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SportsManager -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SportsManager">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <owl:equivalentClass rdf:resource="http://www.sport.com#sportmanager"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">According to the french label sub Soccer, trainership could be meant. However, here a Sportsmanager is interpreted as a member of the board of a sporting club.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Σύμφωνα με τη γαλλική ετικέτα Soccer,μπορεί να εννοείται ο προπονητής.Παρ&apos;όλα αυτα,εδώ ένας αθλητικός μάνατζερ μεταφράζεται ως ένα μέλος συμβουλίου ενός αθλητικού κλαμπ.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="de">Sportmanager</rdfs:label>
+        <rdfs:label xml:lang="es">director deportivo</rdfs:label>
+        <rdfs:label xml:lang="nl">sportbestuurder</rdfs:label>
+        <rdfs:label xml:lang="en">sports manager</rdfs:label>
+        <rdfs:label xml:lang="el">αθλητικός μάνατζερ</rdfs:label>
+        <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SportsManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SportsTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SportsTeam">
+        <owl:equivalentClass rdf:resource="http://schema.org/SportsTeam"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <owl:equivalentClass rdf:resource="http://www.sport.com#sportteam"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="de">Sportmannschaft</rdfs:label>
+        <rdfs:label xml:lang="en">sports team</rdfs:label>
+        <rdfs:label xml:lang="nl">sportteam</rdfs:label>
+        <rdfs:label xml:lang="fr">équipe sportive</rdfs:label>
+        <rdfs:label xml:lang="el">ομαδικά αθλήματα</rdfs:label>
+        <rdfs:label xml:lang="ja">スポーツチーム</rdfs:label>
+        <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SportsTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SquashPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SquashPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Surfer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Surfer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Swimmer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Swimmer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TableTennisPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TableTennisPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TeamMember -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TeamMember">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TennisLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TennisLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TennisPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TennisPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/VideogamesLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/VideogamesLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/VolleyballLeague -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/VolleyballLeague">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/VolleyballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/VolleyballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/WaterPoloPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/WaterPoloPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/WinterSportPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/WinterSportPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Wrestler -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Wrestler">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/SportsTeam -->
+
+    <owl:Class rdf:about="http://schema.org/SportsTeam"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta">
+        <owl:equivalentClass rdf:resource="http://www.sport.com#athlete"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo">
+        <owl:equivalentClass rdf:resource="http://www.sport.com#sportclub"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo">
+        <owl:equivalentClass rdf:resource="http://www.sport.com#sportteam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva">
+        <owl:equivalentClass rdf:resource="http://www.sport.com#sportleague"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante">
+        <owl:equivalentClass rdf:resource="http://www.sport.com#sportmanager"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sport.com#athlete -->
+
+    <owl:Class rdf:about="http://www.sport.com#athlete">
+        <rdfs:subClassOf rdf:resource="http://www.sport.com#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sport.com#person -->
+
+    <owl:Class rdf:about="http://www.sport.com#person"/>
+    
+
+
+    <!-- http://www.sport.com#sportclub -->
+
+    <owl:Class rdf:about="http://www.sport.com#sportclub"/>
+    
+
+
+    <!-- http://www.sport.com#sportleague -->
+
+    <owl:Class rdf:about="http://www.sport.com#sportleague">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q623109"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sport.com#sportmanager -->
+
+    <owl:Class rdf:about="http://www.sport.com#sportmanager">
+        <rdfs:subClassOf rdf:resource="http://www.sport.com#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sport.com#sportteam -->
+
+    <owl:Class rdf:about="http://www.sport.com#sportteam"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q623109 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q623109"/>
+    
+
+
+    <!-- xsd:date -->
+
+    <owl:Class rdf:about="xsd:date"/>
+    
+
+
+    <!-- xsd:double -->
+
+    <owl:Class rdf:about="xsd:double"/>
+    
+
+
+    <!-- xsd:float -->
+
+    <owl:Class rdf:about="xsd:float"/>
+    
+
+
+    <!-- xsd:int -->
+
+    <owl:Class rdf:about="xsd:int"/>
+    
+
+
+    <!-- xsd:string -->
+
+    <owl:Class rdf:about="xsd:string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologiaIntegracion1#Atleta1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Atleta1">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <deportes:equipo_actual rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#Equipo1"/>
+        <deportes:liga_actual rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva1"/>
+        <deportes:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">178</deportes:altura>
+        <deportes:lugar_nacimiento>Medellin</deportes:lugar_nacimiento>
+        <deportes:nombre>Carlos</deportes:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <deportes:nombre>Barcelona</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:ubicacion>Barcelona</deportes:ubicacion>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <deportes:nombre>Madrid</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</deportes:numero_de_equipos>
+        <deportes:ubicacion>Madrid</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <deportes:nombre>MILAN</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:ubicacion>Milan</deportes:ubicacion>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <deportes:nombre>Argentina</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</deportes:numero_de_equipos>
+        <deportes:ubicacion>Argentina</deportes:ubicacion>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <deportes:nombre>Mexico</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</deportes:numero_de_equipos>
+        <deportes:ubicacion>Mexico/deportes:ubicacion>
+    </owl:NamedIndividual>
+	
+	
+	
+
+
+    <!-- http://www.semanticweb.org/ontologiaIntegracion1#Equipo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Equipo1">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva1"/>
+        <www:representa rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo1"/>
+        <deportes:nombre>El Perdedor</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:presidente>Carlos</deportes:presidente>
+        <deportes:ubicacion>China</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Equipo2">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva1"/>
+        <www:representa rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo2"/>
+        <deportes:nombre>El ganador</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:presidente>CTacho</deportes:presidente>
+        <deportes:ubicacion>Rusia</deportes:ubicacion>
+    </owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Equipo3">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva4"/>
+        <www:representa rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo2"/>
+        <deportes:nombre>Real madrid</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:presidente>Fredy</deportes:presidente>
+        <deportes:ubicacion>España</deportes:ubicacion>
+    </owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Equipo4">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva2"/>
+        <www:representa rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo3"/>
+        <deportes:nombre>MEdellin</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:presidente>Carlos</deportes:presidente>
+        <deportes:ubicacion>Colombia</deportes:ubicacion>
+    </owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Equipo5">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva3"/>
+        <www:representa rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#ClubDeportivo5"/>
+        <deportes:nombre>NAcional</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:presidente>Carlos</deportes:presidente>
+        <deportes:ubicacion>China</deportes:ubicacion>
+    </owl:NamedIndividual>
+
+
+    <!-- http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva1">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+        <deportes:nombre>Liga Colombiana</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</deportes:numero_de_equipos>
+        <deportes:ubicacion>Colombia</deportes:ubicacion>
+    </owl:NamedIndividual>
+	
+	 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva2">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+        <deportes:nombre>Liga españa</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</deportes:numero_de_equipos>
+        <deportes:ubicacion>España</deportes:ubicacion>
+    </owl:NamedIndividual>
+	 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva3">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+        <deportes:nombre>Liga argentina</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</deportes:numero_de_equipos>
+        <deportes:ubicacion>argentina</deportes:ubicacion>
+    </owl:NamedIndividual>
+	 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva4">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+        <deportes:nombre>Liga brazileña</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</deportes:numero_de_equipos>
+        <deportes:ubicacion>brazil</deportes:ubicacion>
+    </owl:NamedIndividual>
+	 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva5">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+        <deportes:nombre>Liga venezolana</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</deportes:numero_de_equipos>
+        <deportes:ubicacion>venezuela</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologiaIntegracion1#Manager1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Manager1">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsManager"/>
+        <deportes:años_activo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</deportes:años_activo>
+        <deportes:fecha_nacimiento>Marzo 1990</deportes:fecha_nacimiento>
+        <deportes:nombre>Carlos</deportes:nombre>
+    </owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Manager2">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsManager"/>
+        <deportes:años_activo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</deportes:años_activo>
+        <deportes:fecha_nacimiento>Mayo 1995</deportes:fecha_nacimiento>
+        <deportes:nombre>Luis</deportes:nombre>
+    </owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Manager3">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsManager"/>
+        <deportes:años_activo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</deportes:años_activo>
+        <deportes:fecha_nacimiento>junio 1990</deportes:fecha_nacimiento>
+        <deportes:nombre>JAvier</deportes:nombre>
+    </owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Manager4">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsManager"/>
+        <deportes:años_activo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</deportes:años_activo>
+        <deportes:fecha_nacimiento>Agosto 2000</deportes:fecha_nacimiento>
+        <deportes:nombre>Santiago</deportes:nombre>
+    </owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Manager5">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsManager"/>
+        <deportes:años_activo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</deportes:años_activo>
+        <deportes:fecha_nacimiento>diciembre 1998</deportes:fecha_nacimiento>
+        <deportes:nombre>susana</deportes:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologiaIntegracion1#Persona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Persona1">
+        <rdf:type rdf:resource="http://www.sport.com#person"/>
+        <ontology:leagueManager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva1"/>
+        <www:manager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#Equipo1"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</deportes:edad>
+        <deportes:estado_jugador>Activo</deportes:estado_jugador>
+        <deportes:nombre>Jhonier</deportes:nombre>
+        <deportes:sexo>M</deportes:sexo>
+    </owl:NamedIndividual>
+	  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Persona2">
+        <rdf:type rdf:resource="http://www.sport.com#person"/>
+        <ontology:leagueManager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva2"/>
+        <www:manager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#Equipo1"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</deportes:edad>
+        <deportes:estado_jugador>Activo</deportes:estado_jugador>
+        <deportes:nombre>Mielna</deportes:nombre>
+        <deportes:sexo>F</deportes:sexo>
+    </owl:NamedIndividual>
+	  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Persona3">
+        <rdf:type rdf:resource="http://www.sport.com#person"/>
+        <ontology:leagueManager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva3"/>
+        <www:manager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#Equipo2"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</deportes:edad>
+        <deportes:estado_jugador>Activo</deportes:estado_jugador>
+        <deportes:nombre>Cristiano</deportes:nombre>
+        <deportes:sexo>M</deportes:sexo>
+    </owl:NamedIndividual>
+	  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Persona4">
+        <rdf:type rdf:resource="http://www.sport.com#person"/>
+        <ontology:leagueManager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva2"/>
+        <www:manager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#Equipo2"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</deportes:edad>
+        <deportes:estado_jugador>Activo</deportes:estado_jugador>
+        <deportes:nombre>Muriño</deportes:nombre>
+        <deportes:sexo>M</deportes:sexo>
+    </owl:NamedIndividual>
+	  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologiaIntegracion1#Persona5">
+        <rdf:type rdf:resource="http://www.sport.com#person"/>
+        <ontology:leagueManager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#LigaDeportiva5"/>
+        <www:manager rdf:resource="http://www.semanticweb.org/ontologiaIntegracion1#Equipo3"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</deportes:edad>
+        <deportes:estado_jugador>Retirado</deportes:estado_jugador>
+        <deportes:nombre>Pepe</deportes:nombre>
+        <deportes:sexo>M</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/">
+        <terms:defines rdf:resource="http://dbpedia.org/ontology/SportsManager"/>
+        <terms:defines rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+        <terms:defines rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <terms:defines rdf:resource="http://dbpedia.org/ontology/person"/>
+        <terms:defines rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+        <terms:defines rdf:resource="http://dbpedia.org/ontology/SportsClub"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/data/definitions.ttl">
+        <terms:describes rdf:resource="http://dbpedia.org/ontology/SportsClub"/>
+        <terms:describes rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <terms:describes rdf:resource="http://dbpedia.org/ontology/person"/>
+        <terms:describes rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+        <terms:describes rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+        <terms:describes rdf:resource="http://dbpedia.org/ontology/SportsManager"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
