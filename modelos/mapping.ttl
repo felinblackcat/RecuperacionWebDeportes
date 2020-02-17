@@ -1,0 +1,280 @@
+@prefix map: <#> .
+@prefix db: <> .
+@prefix vocab: <vocab/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix jdbc: <http://d2rq.org/terms/jdbc/> .
+
+map:database a d2rq:Database;
+	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
+	d2rq:jdbcDSN "jdbc:mysql://localhost/rwt1";
+	d2rq:username "root";
+	jdbc:autoReconnect "true";
+	jdbc:zeroDateTimeBehavior "convertToNull";
+	.
+
+# Table athlete
+map:athlete a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "athlete/@@athlete.ID_Athlete@@";
+	d2rq:class vocab:athlete;
+	d2rq:classDefinitionLabel "athlete";
+	.
+map:athlete__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:athlete;
+	d2rq:property rdfs:label;
+	d2rq:pattern "athlete #@@athlete.ID_Athlete@@";
+	.
+map:athlete_height a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:athlete;
+	d2rq:property vocab:athlete_height;
+	d2rq:propertyDefinitionLabel "athlete height";
+	d2rq:column "athlete.height";
+	.
+map:athlete_birthPlace a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:athlete;
+	d2rq:property vocab:athlete_birthPlace;
+	d2rq:propertyDefinitionLabel "athlete birthPlace";
+	d2rq:column "athlete.birthPlace";
+	.
+map:athlete_current_team__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:athlete;
+	d2rq:property vocab:athlete_current_team;
+	d2rq:refersToClassMap map:sportteam;
+	d2rq:join "athlete.current_team => sportteam.NIT_Sportteam";
+	.
+map:athlete_current_league__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:athlete;
+	d2rq:property vocab:athlete_current_league;
+	d2rq:refersToClassMap map:sportleague;
+	d2rq:join "athlete.current_league => sportleague.NIT_Sportleague";
+	.
+map:athlete_ID_Athlete__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:athlete;
+	d2rq:property vocab:athlete_ID_Athlete;
+	d2rq:refersToClassMap map:person;
+	d2rq:join "athlete.ID_Athlete => person.ID_Person";
+	.
+
+# Table person
+map:person a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "person/@@person.ID_Person@@";
+	d2rq:class vocab:person;
+	d2rq:classDefinitionLabel "person";
+	.
+map:person__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:person;
+	d2rq:property rdfs:label;
+	d2rq:pattern "person #@@person.ID_Person@@";
+	.
+map:person_ID_Person a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:person;
+	d2rq:property vocab:person_ID_Person;
+	d2rq:propertyDefinitionLabel "person ID_Person";
+	d2rq:column "person.ID_Person";
+	d2rq:datatype xsd:integer;
+	.
+map:person_playerstatus a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:person;
+	d2rq:property vocab:person_playerstatus;
+	d2rq:propertyDefinitionLabel "person playerstatus";
+	d2rq:column "person.playerstatus";
+	.
+map:person_age a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:person;
+	d2rq:property vocab:person_age;
+	d2rq:propertyDefinitionLabel "person age";
+	d2rq:column "person.age";
+	d2rq:datatype xsd:integer;
+	.
+map:person_sex a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:person;
+	d2rq:property vocab:person_sex;
+	d2rq:propertyDefinitionLabel "person sex";
+	d2rq:column "person.sex";
+	.
+map:person_name a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:person;
+	d2rq:property vocab:person_name;
+	d2rq:propertyDefinitionLabel "person name";
+	d2rq:column "person.name";
+	.
+map:person_manager__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:person;
+	d2rq:property vocab:person_manager;
+	d2rq:refersToClassMap map:sportteam;
+	d2rq:join "person.manager => sportteam.NIT_Sportteam";
+	.
+map:person_league_manager__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:person;
+	d2rq:property vocab:person_league_manager;
+	d2rq:refersToClassMap map:sportleague;
+	d2rq:join "person.league_manager => sportleague.NIT_Sportleague";
+	.
+
+# Table sportclub
+map:sportclub a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "sportclub/@@sportclub.NIT_Sportclub@@";
+	d2rq:class vocab:sportclub;
+	d2rq:classDefinitionLabel "sportclub";
+	.
+map:sportclub__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportclub;
+	d2rq:property rdfs:label;
+	d2rq:pattern "sportclub #@@sportclub.NIT_Sportclub@@";
+	.
+map:sportclub_NIT_Sportclub a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportclub;
+	d2rq:property vocab:sportclub_NIT_Sportclub;
+	d2rq:propertyDefinitionLabel "sportclub NIT_Sportclub";
+	d2rq:column "sportclub.NIT_Sportclub";
+	d2rq:datatype xsd:integer;
+	.
+map:sportclub_numberofteam a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportclub;
+	d2rq:property vocab:sportclub_numberofteam;
+	d2rq:propertyDefinitionLabel "sportclub numberofteam";
+	d2rq:column "sportclub.numberofteam";
+	.
+map:sportclub_locationcity a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportclub;
+	d2rq:property vocab:sportclub_locationcity;
+	d2rq:propertyDefinitionLabel "sportclub locationcity";
+	d2rq:column "sportclub.locationcity";
+	.
+map:sportclub_name a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportclub;
+	d2rq:property vocab:sportclub_name;
+	d2rq:propertyDefinitionLabel "sportclub name";
+	d2rq:column "sportclub.name";
+	.
+
+# Table sportleague
+map:sportleague a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "sportleague/@@sportleague.NIT_Sportleague@@";
+	d2rq:class vocab:sportleague;
+	d2rq:classDefinitionLabel "sportleague";
+	.
+map:sportleague__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportleague;
+	d2rq:property rdfs:label;
+	d2rq:pattern "sportleague #@@sportleague.NIT_Sportleague@@";
+	.
+map:sportleague_NIT_Sportleague a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportleague;
+	d2rq:property vocab:sportleague_NIT_Sportleague;
+	d2rq:propertyDefinitionLabel "sportleague NIT_Sportleague";
+	d2rq:column "sportleague.NIT_Sportleague";
+	d2rq:datatype xsd:integer;
+	.
+map:sportleague_numberofteam a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportleague;
+	d2rq:property vocab:sportleague_numberofteam;
+	d2rq:propertyDefinitionLabel "sportleague numberofteam";
+	d2rq:column "sportleague.numberofteam";
+	.
+map:sportleague_locationcity a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportleague;
+	d2rq:property vocab:sportleague_locationcity;
+	d2rq:propertyDefinitionLabel "sportleague locationcity";
+	d2rq:column "sportleague.locationcity";
+	.
+map:sportleague_name a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportleague;
+	d2rq:property vocab:sportleague_name;
+	d2rq:propertyDefinitionLabel "sportleague name";
+	d2rq:column "sportleague.name";
+	.
+
+# Table sportmanager
+map:sportmanager a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "sportmanager/@@sportmanager.ID_Sportmanager@@";
+	d2rq:class vocab:sportmanager;
+	d2rq:classDefinitionLabel "sportmanager";
+	.
+map:sportmanager__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportmanager;
+	d2rq:property rdfs:label;
+	d2rq:pattern "sportmanager #@@sportmanager.ID_Sportmanager@@";
+	.
+map:sportmanager_active_year a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportmanager;
+	d2rq:property vocab:sportmanager_active_year;
+	d2rq:propertyDefinitionLabel "sportmanager active_year";
+	d2rq:column "sportmanager.active_year";
+	.
+map:sportmanager_birthdate a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportmanager;
+	d2rq:property vocab:sportmanager_birthdate;
+	d2rq:propertyDefinitionLabel "sportmanager birthdate";
+	d2rq:column "sportmanager.birthdate";
+	.
+map:sportmanager_ID_Sportmanager__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportmanager;
+	d2rq:property vocab:sportmanager_ID_Sportmanager;
+	d2rq:refersToClassMap map:person;
+	d2rq:join "sportmanager.ID_Sportmanager => person.ID_Person";
+	.
+
+# Table sportteam
+map:sportteam a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "sportteam/@@sportteam.NIT_Sportteam@@";
+	d2rq:class vocab:sportteam;
+	d2rq:classDefinitionLabel "sportteam";
+	.
+map:sportteam__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportteam;
+	d2rq:property rdfs:label;
+	d2rq:pattern "sportteam #@@sportteam.NIT_Sportteam@@";
+	.
+map:sportteam_numberofteam a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportteam;
+	d2rq:property vocab:sportteam_numberofteam;
+	d2rq:propertyDefinitionLabel "sportteam numberofteam";
+	d2rq:column "sportteam.numberofteam";
+	.
+map:sportteam_name a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportteam;
+	d2rq:property vocab:sportteam_name;
+	d2rq:propertyDefinitionLabel "sportteam name";
+	d2rq:column "sportteam.name";
+	.
+map:sportteam_locationcity a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportteam;
+	d2rq:property vocab:sportteam_locationcity;
+	d2rq:propertyDefinitionLabel "sportteam locationcity";
+	d2rq:column "sportteam.locationcity";
+	.
+map:sportteam_chairperson a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportteam;
+	d2rq:property vocab:sportteam_chairperson;
+	d2rq:propertyDefinitionLabel "sportteam chairperson";
+	d2rq:column "sportteam.chairperson";
+	.
+map:sportteam_NIT_Sportteam a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportteam;
+	d2rq:property vocab:sportteam_NIT_Sportteam;
+	d2rq:propertyDefinitionLabel "sportteam NIT_Sportteam";
+	d2rq:column "sportteam.NIT_Sportteam";
+	d2rq:datatype xsd:integer;
+	.
+map:sportteam_competidor__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportteam;
+	d2rq:property vocab:sportteam_competidor;
+	d2rq:refersToClassMap map:sportleague;
+	d2rq:join "sportteam.competidor => sportleague.NIT_Sportleague";
+	.
+map:sportteam_representa__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:sportteam;
+	d2rq:property vocab:sportteam_representa;
+	d2rq:refersToClassMap map:sportclub;
+	d2rq:join "sportteam.representa => sportclub.NIT_Sportclub";
+	.
+

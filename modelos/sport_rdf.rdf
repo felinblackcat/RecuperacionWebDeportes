@@ -135,9 +135,6 @@
 				<rdfs:range  rdf:resource="#athlete"/>
 		</rdf:Property>
 		
-		
-		
-		
 		<!--***************** instancias **************-->
 		
 		<!--***************** sportleague **************-->
