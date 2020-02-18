@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wdr="http://www.w3.org/2007/05/powder#" xmlns:rec="&rec;" xmlns:doc="&doc;" xmlns:contact="&contact;" xmlns:org="&org;" xmlns:dc="&dc;" xmlns:rdf="&rdf;" xmlns:rdfs="&rdfs;" xmlns:owl="&owl;" xmlns:dcterms="&dcterms;" xmlns:foaf="&foaf;" xmlns:wdrs="&wdrs;" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Protocol for Web Description Resources (POWDER): POWDER-S Vocabulary (WDRS)</title>
+    <style type="text/css">
+var {font-family: serif; font-style: italic;}
+li, dt, dd {margin-top: 1em;}
+ul, ol, dl {margin-top: 1em; margin-bottom: 1em;}
+ol ol {list-style-type: lower-alpha}
+ol ol ol {list-style-type: lower-roman}
+pre, code {font-family: Lucida Console, monospace;}
+.comment {margin-left: 2em; font-style: italic;}
+.example {padding: 0.5em; background-color: rgb(204, 255, 204); border:thin dotted black; white-space:nowrap}
+.oq {border-style: dotted; border-width: 1px; background-color:#ccffcc; padding:1em}
+table.vocab {margin: 0 auto; border-collapse:collapse; border:thin solid black}
+td, th {border:thin solid black; padding:0.5em}
+caption {caption-side:bottom; padding-top:1em; margin:0 auto}
+p.caption {font-weight:bold}
+.toc1 {padding:0 0 0.5em 0}
+.toc2 {padding:0 0 0.5em 1em}
+.toc3 {padding:0 0 0.5em 2em}
+.glossTerm { background-color: rgb(255, 255, 153) }
+.sgmlcomment {font-style: italic; color: #005500;}
+.sgmlelmt {font-weight: bold; color: #0000aa;}
+.sgmlattr {font-weight: bold; color: #000000;}
+.sgmlvalue {color: #0000ff;}
+.sgmlentref {color: #ff0000;}
+.src {border: solid 1px #000000; padding: 2em;}
+.spec {font-size: .9em; padding: .5em; border: solid 1px #aaaadd; margin-bottom: 1em; background-color: #ccccff;}
+.overview {font-size: .9em;}
+.overview div {border: solid 1px #aaaadd; margin: 1em; float: left;}
+.overview div h2 {font-size: 1.2em; padding: .2em; margin: 0; text-align: center; background-color: #aaaadd;}
+.list {font-size: .9em; border: solid 1px #aaaadd; margin: 1em; padding: 1em; background-color:#ccccff;}
+.content {clear: left;}
+.toc dt {font-weight: normal;}
+.toc dd dl {margin: 0em;}
+</style>
+    <link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/base.css" />
+  </head>
+  <body>
+    <div class="head">
+      <a href="http://www.w3.org/">
+        <img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home" />
+      </a>
+      <h1>Protocol for Web Description Resources (POWDER): POWDER-S Vocabulary (WDRS)</h1>
+      <h2>8 November 2010</h2>
+      <dl>
+        <dt>Editors:</dt>
+        <dd>Andrea Perego, Universit&agrave; degli Studi dell'Insubria</dd>
+        <dd>Stasinos Konstantopoulos, Institute of Informatics &amp; Telecommunications (IIT), NCSR</dd>
+        <dd>Phil Archer, Institute of Informatics &amp; Telecommunications (IIT), NCSR (formerly at FOSI)</dd>
+      </dl>
+      <p>This document is also available as a non-normative <a href="http://www.w3.org/2007/05/powder-s.rdf">RDF Schema</a>.</p>
+      <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 2007 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+      <hr />
+    </div>
+    <h2 id="abstract">Abstract</h2>
+    <p>This is the namespace document for the POWDER-S vocabulary, part of the Protocol for Web Description Resources. Although this document sets out the domain and range of each term, their full definitions are to be found in other documents in the set, notably the Description Resources document [<a href="#dr">DR</a>] and the Formal Semantics document [<a href="#formal">FORMAL</a>].</p>
+    <h2 id="status">Status of this document</h2>
+    <p><em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this technical report can be found in the <a href="http://www.w3.org/TR/" shape="rect">W3C technical reports index</a> at http://www.w3.org/TR/.</em></p>
+    <p>This document describes the <a href="http://www.w3.org/TR/powder-dr/#formalSemantics">POWDER-S</a> 
+	schema which has the namespace <code>http://www.w3.org/2007/05/powder-s#</code>. It was developed by the 
+	<a href="http://www.w3.org/2007/powder/" shape="rect">POWDER Working Group</a> which 
+	does not expect to publish further updates. However, this document has no formal status (it is neither a 
+	W3C Recommendation nor a Working Group Note) and future changes, typically in the form of corrections, are possible. Such a correction has been
+	made. Previously (a version dated 30 April 2009) an erroneous range restriction was applied to the <code>describedby</code> property. This has been removed.</p>
+    <p>Please send comments about this document to <a href="mailto:public-powderwg@w3.org">public-powderwg@w3.org</a> (with <a href="http://lists.w3.org/Archives/Public/public-powderwg/" shape="rect">public archive</a>).</p>
+    <p>Publication of this document does not imply endorsement by the W3C Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is inappropriate to cite this document as other than work in progress.</p>
+    <p>This document was produced by a group operating under the <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</a>. W3C maintains a <a rel="disclosure" href="http://www.w3.org/2004/01/pp-impl/40243/status">public list of any patent disclosures</a> made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</a> must disclose the information in accordance with <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</a>.</p>
+    <h2 id="toc">Table of Contents</h2>
+    <dl class="toc">
+      <dt>1 <a href="#intro">Introduction</a></dt>
+      <dd>
+        <dl>
+          <dt>1.1 <a href="#namespaces">Namespaces</a></dt>
+        </dl>
+      </dd>
+      <dt>2 <a href="terms">The Vocabulary Terms</a></dt>
+      <dd>
+        <dl>
+          <dt>2.1 <a href="#classes">Classes</a></dt>
+          <dd>
+            <dl>
+              <dt>2.1.1 <a href="#Document">Class <code>Document</code></a></dt>
+              <dt>2.1.2 <a href="#Processor">Class <code>Processor</code></a></dt>
+            </dl>
+          </dd>
+          <dt>2.2 <a href="properties">Properties</a></dt>
+          <dd>
+            <dl>
+              <dt>2.2.1 <a href="#text">Property <code>text</code></a></dt>
+              <dt>2.2.2 <a href="#issuedby">Property <code>issuedby</code></a></dt>
+              <dt>2.2.3 <a href="#matchesregex">Property <code>matchesregex</code></a></dt>
+              <dt>2.2.4 <a href="#notmatchesregex">Property <code>notmatchesregex</code></a></dt>
+              <dt>2.2.5 <a href="#hasIRI">Property <code>hasIRI</code></a></dt>
+              <dt>2.2.6 <a href="#tag">Property <code>tag</code></a></dt>
+              <dt>2.2.7 <a href="#notknownto">Property <code>notknownto</code></a></dt>
+              <dt>2.2.8 <a href="#describedby">Property <code>describedby</code></a></dt>
+              <dt>2.2.9 <a href="#authenticate">Property <code>authenticate</code></a></dt>
+              <dt>2.2.10 <a href="#validfrom">Property <code>validfrom</code></a></dt>
+              <dt>2.2.11 <a href="#validuntil">Property <code>validuntil</code></a></dt>
+              <dt>2.2.12 <a href="#logo">Property <code>logo</code></a></dt>
+              <dt>2.2.13 <a href="#sha1sum">Property <code>sha1sum</code></a></dt>
+              <dt>2.2.14 <a href="#certified">Property <code>certified</code></a></dt>
+              <dt>2.2.15 <a href="#certifiedby">Property <code>certifiedby</code></a></dt>
+              <dt>2.2.16 <a href="#supportedby">Property <code>supportedby</code></a></dt>
+              <dt>2.2.17 <a href="#data_error">Property <code>data_error</code></a></dt>
+              <dt>2.2.18 <a href="#proc_error">Property <code>proc_error</code></a></dt>
+              <dt>2.2.19 <a href="#error_code">Property <code>error_code</code></a></dt>
+            </dl>
+          </dd>
+        </dl>
+      </dd>
+      <dt>
+        <a href="#ack">Acknowledgements</a>
+      </dt>
+      <dt>
+        <a href="#references">References</a>
+      </dt>
+    </dl>
+    <div class="content">
+      <h2 id="intro">1 Introduction</h2>
+      <p>The Protocol for Web Description Resources (POWDER) allows metadata to be associated with groups of resources such as those found on a Web site. Its main 'unit of information' is the Description Resource (DR), one or more of which are contained in a POWDER document. Processing such a document yields RDF triples describing the resources that are within the scope of the DRs. POWDER documents are written in XML and have relatively loose semantics, however, a GRDDL transform, associated with the root namespace, renders the data in RDF/OWL with more formal semantics.</p>
+      <p>An RDF vocabulary is defined to support Semantic POWDER, or POWDER-S encoding, of Description Resources. This is the namespace document for that vocabulary. Although this document sets out the domain and range of each term, their full definitions are to be found in other documents in the set, notably the Description Resources document [<a href="#dr">DR</a>] and the Formal Semantics document [<a href="#formal">FORMAL</a>].</p>
+      <h3 id="namespaces">1.1 Namespaces</h3>
+      <p>The POWDER-S vocabulary namespace is <code>http://www.w3.org/2007/05/powder-s#</code> for which we use the prefix <code>wdrs</code>. All prefixes used in this document, together with their associated namespaces, are shown in the table below.</p>
+      <table id="table1" style="border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th>Prefix</th>
+            <th>Namespace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code>wdrs</code>
+            </td>
+            <td>
+              <code>http://www.w3.org/2007/05/powder-s#</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>rdf</code>
+            </td>
+            <td>
+              <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>rdfs</code>
+            </td>
+            <td>
+              <code>http://www.w3.org/2000/01/rdf-schema#</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>owl</code>
+            </td>
+            <td>
+              <code>http://www.w3.org/2002/07/owl#</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>dcterms</code>
+            </td>
+            <td>
+              <code>http://purl.org/dc/terms/</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>xsd</code>
+            </td>
+            <td>
+              <code>http://www.w3.org/TR/xmlschema-2/</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 id="terms">2 The Vocabulary Terms</h2>
+      <h3 id="classes">2.1 Classes</h3>
+      <h4 id="Document">2.1.1 Class <code>Document</code></h4>
+      <div class="spec">
+        <p>RDFS Class</p>
+        <p>Label: <em>POWDER document</em></p>
+        <p>Subclass of: 
+       <a href="http://www.w3.org/2002/07/owl#Ontology"><code>http://www.w3.org/2002/07/owl#Ontology</code></a></p>
+        <p>In domain of: 
+      <a href="#data_error"><code>data_error</code></a> </p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#structure"><code>http://www.w3.org/TR/powder-dr/#structure</code></a> </p>
+      </div>
+      <p>A POWDER document.</p>
+      <h4 id="Processor">2.1.2 Class <code>Processor</code></h4>
+      <div class="spec">
+        <p>RDFS Class</p>
+        <p>Label: <em>POWDER processor</em></p>
+        <p>Subclass of: 
+       <a href="http://purl.org/dc/terms/Agent"><code>http://purl.org/dc/terms/Agent</code></a></p>
+        <p>In domain of: 
+      <a href="#proc_error"><code>proc_error</code></a> </p>
+        <p>In range of: 
+      <a href="#notknownto"><code>notknownto</code></a> </p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#powderprocessor"><code>http://www.w3.org/TR/powder-dr/#powderprocessor</code></a> </p>
+      </div>
+      <p>A software agent able to process POWDER documents.</p>
+      <h3 id="properties">2.2 Properties</h3>
+      <h4 id="text">2.2.1 Property <code>text</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>text that may be displayed</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#AnnotationProperty"><code>http://www.w3.org/2002/07/owl#AnnotationProperty</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#line13"><code>http://www.w3.org/TR/powder-dr/#line13</code></a> </p>
+      </div>
+      <p>This property provides a summary of the descriptorset that it annotates, suitable for display to end users.</p>
+      <h4 id="issuedby">2.2.2 Property <code>issuedby</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>issued by</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#AnnotationProperty"><code>http://www.w3.org/2002/07/owl#AnnotationProperty</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#line3"><code>http://www.w3.org/TR/powder-dr/#line3</code></a> </p>
+      </div>
+      <p>This property denotes the author of a POWDER document.</p>
+
+      <h4 id="matchesregex">2.2.3 Property <code>matchesregex</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>matches regular expression</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#DatatypeProperty"><code>http://www.w3.org/2002/07/owl#DatatypeProperty</code></a></p>
+        <p>Domain: 
+       <a href="http://www.w3.org/2000/01/rdf-schema#Resource"><code>http://www.w3.org/2000/01/rdf-schema#Resource</code></a></p>
+        <p>Range: 
+       <a href="http://www.w3.org/2001/XMLSchema#string"><code>http://www.w3.org/2001/XMLSchema#string</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-formal/#regexSemantics"><code>http://www.w3.org/TR/powder-formal/#regexSemantics</code></a> </p>
+        <p>See also:
+      <a href="http://www.w3.org/TR/xpath-functions/#regex-syntax"><code>http://www.w3.org/TR/xpath-functions/#regex-syntax</code></a> </p>
+      </div>
+      <p>This is the key 'include' property for IRI set definitions in POWDER-S. It is necessary to take account of the POWDER Semantic Extension to process this fully. The value is a regular expression that is matched against an IRI.</p>
+
+
+      <h4 id="notmatchesregex">2.2.4 Property <code>notmatchesregex</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>matches regular expression</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#DatatypeProperty"><code>http://www.w3.org/2002/07/owl#DatatypeProperty</code></a></p>
+        <p>Domain: 
+       <a href="http://www.w3.org/2000/01/rdf-schema#Resource"><code>http://www.w3.org/2000/01/rdf-schema#Resource</code></a></p>
+        <p>Range: 
+       <a href="http://www.w3.org/2001/XMLSchema#string"><code>http://www.w3.org/2001/XMLSchema#string</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-formal/#regexSemantics"><code>http://www.w3.org/TR/powder-formal/#regexSemantics</code></a> </p>
+        <p>See also:
+      <a href="http://www.w3.org/TR/xpath-functions/#regex-syntax"><code>http://www.w3.org/TR/xpath-functions/#regex-syntax</code></a> </p>
+      </div>
+      <p>This is the key 'exclude' property for IRI set definitions in POWDER-S. It is necessary to take account of the POWDER Semantic Extension to process this fully. The value is a regular expression that is matched against an IRI.</p>
+
+      <h4 id="hasIRI">2.2.5 Property <code>hasIRI</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>has IRI</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#DatatypeProperty"><code>http://www.w3.org/2002/07/owl#DatatypeProperty</code></a></p>
+        <p>Domain: 
+       <a href="http://www.w3.org/2000/01/rdf-schema#Resource"><code>http://www.w3.org/2000/01/rdf-schema#Resource</code></a></p>
+        <p>Range: 
+       <a href="http://www.w3.org/2001/XMLSchema#anyURI"><code>http://www.w3.org/2001/XMLSchema#anyURI</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-formal/#oxRegexSemantics"><code>http://www.w3.org/TR/powder-formal/#oxRegexSemantics</code></a> </p>
+      </div>
+      <p>This property is meant to be used in OWL2 instead of wdrs:matchesregex. It denotes the string data range corresponding to a set of IRIs.</p>
+      <h4 id="tag">2.2.6 Property <code>tag</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>tag</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#DatatypeProperty"><code>http://www.w3.org/2002/07/owl#DatatypeProperty</code></a></p>
+        <p>Range: 
+       <a href="http://www.w3.org/2001/XMLSchema#token"><code>http://www.w3.org/2001/XMLSchema#token</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#tags"><code>http://www.w3.org/TR/powder-dr/#tags</code></a> </p>
+      </div>
+      <p>Property linking to a free-text tag which may include spaces.</p>
+      <h4 id="notknownto">2.2.7 Property <code>notknownto</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>not known to</em></p>
+        <p>Range: 
+       <a href="#Processor"><code>#Processor</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#powderprocessor"><code>http://www.w3.org/TR/powder-dr/#powderprocessor</code></a> </p>
+      </div>
+      <p>Property used in results returned from a POWDER Processor that has no data about the candidate resource. The value is the IRI of the processor.</p>
+      <h4 id="describedby">2.2.8 Property <code>describedby</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>described by</em></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#semlink"><code>http://www.w3.org/TR/powder-dr/#semlink</code></a> </p>
+      </div>
+      <p>An RDF property to exactly match the describedby relationship type introduced in 
+		<a href="http://www.w3.org/TR/powder-dr/#assoc-linking">http://www.w3.org/TR/powder-dr/#assoc-linking</a> and 
+		formally defined in appendix D of the same document, i.e. the relationship A 'describedby' B asserts that resource 
+		B provides a description of resource A. There are no constraints on the format or representation of either A or 
+		B, neither are there any further constraints on either resource.</p>
+      <h4 id="authenticate">2.2.9 Property <code>authenticate</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>authenticate</em></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#discover"><code>http://www.w3.org/TR/powder-dr/#discover</code></a> </p>
+      </div>
+      <p>A pointer to a document that describes how Description Resources created by a FOAF Agent or a DC Terms Agent may be authenticated</p>
+      <h4 id="validfrom">2.2.10 Property <code>validfrom</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>valid from</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#AnnotationProperty"><code>http://www.w3.org/2002/07/owl#AnnotationProperty</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#certification"><code>http://www.w3.org/TR/powder-dr/#certification</code></a> </p>
+      </div>
+      <p>Provides a timestamp that a POWDER Processor may use when assessing trustworthiness of a POWDER document. Informally, a POWDER Processor should normally ignore data in the document before the given date.</p>
+      <h4 id="validuntil">2.2.11 Property <code>validuntil</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>valid until</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#AnnotationProperty"><code>http://www.w3.org/2002/07/owl#AnnotationProperty</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#certification"><code>http://www.w3.org/TR/powder-dr/#certification</code></a> </p>
+      </div>
+      <p>Provides a timestamp that a POWDER Processor may use when assessing trustworthiness of a POWDER document. Informally, a POWDER Processor should normally ignore data in the document after the given date.</p>
+      <h4 id="logo">2.2.12 Property <code>logo</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>logo</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#AnnotationProperty"><code>http://www.w3.org/2002/07/owl#AnnotationProperty</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#line13"><code>http://www.w3.org/TR/powder-dr/#line13</code></a> </p>
+      </div>
+      <p>Points to a graphic summary for the resources in a given class. Typically, it is a logo denoting conformance of a given (set of) resource(s) to a given set of criteria.</p>
+      <h4 id="sha1sum">2.2.13 Property <code>sha1sum</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>SHA-1 sum</em></p>
+        <p>Range: 
+       <a href="http://www.w3.org/2001/XMLSchema#base64Binary"><code>http://www.w3.org/2001/XMLSchema#base64Binary</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#certification"><code>http://www.w3.org/TR/powder-dr/#certification</code></a> </p>
+      </div>
+      <p>Links to a Base64-encoded binary SHA-1 hash of the described resource. May be used by POWDER Processors when assessing trustworthiness of a DR.</p>
+      <h4 id="certified">2.2.14 Property <code>certified</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>certified</em></p>
+        <p>Range: 
+       <a href="http://www.w3.org/2001/XMLSchema#boolean"><code>http://www.w3.org/2001/XMLSchema#boolean</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#certification"><code>http://www.w3.org/TR/powder-dr/#certification</code></a> </p>
+      </div>
+      <p>A property that takes a Boolean value to declare whether the author of the data certifies the described resource.</p>
+      <h4 id="certifiedby">2.2.15 Property <code>certifiedby</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>certified by</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#AnnotationProperty"><code>http://www.w3.org/2002/07/owl#AnnotationProperty</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#certification"><code>http://www.w3.org/TR/powder-dr/#certification</code></a> </p>
+      </div>
+      <p>A property that links a resource to a POWDER document that certifies it.</p>
+      <h4 id="supportedby">2.2.16 Property <code>supportedby</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>supported by</em></p>
+        <p>Type: <a href="http://www.w3.org/2002/07/owl#AnnotationProperty"><code>http://www.w3.org/2002/07/owl#AnnotationProperty</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#supportedBy"><code>http://www.w3.org/TR/powder-dr/#supportedBy</code></a> </p>
+      </div>
+      <p>A property that links a POWDER document to some other data source that supports the descriptions provided.</p>
+      <h4 id="data_error">2.2.17 Property <code>data_error</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>data error</em></p>
+        <p>Domain: 
+       <a href="#Document"><code>#Document</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#ppErrorhandling"><code>http://www.w3.org/TR/powder-dr/#ppErrorhandling</code></a> </p>
+      </div>
+      <p>A property denoting a description of the specific error found in a given POWDER document.</p>
+      <h4 id="proc_error">2.2.18 Property <code>proc_error</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>processing error</em></p>
+        <p>Domain: 
+       <a href="#Processor"><code>#Processor</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#ppErrorhandling"><code>http://www.w3.org/TR/powder-dr/#ppErrorhandling</code></a> </p>
+      </div>
+      <p>A property denoting a description of the specific software error.</p>
+      <h4 id="error_code">2.2.19 Property <code>error_code</code></h4>
+      <div class="spec">
+        <p>RDF Property</p>
+        <p>Label: <em>error code</em></p>
+        <p>Range: 
+       <a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"><code>http://www.w3.org/2001/XMLSchema#nonNegativeInteger</code></a></p>
+        <p>Defined in:
+      <a href="http://www.w3.org/TR/powder-dr/#ppErrorhandling"><code>http://www.w3.org/TR/powder-dr/#ppErrorhandling</code></a> </p>
+      </div>
+      <p>A property denoting the code of any error encountered by the POWDER processor.</p>
+      <h2 id="references">References</h2>
+      <dl>
+        <dt>
+          <a id="formal" name="formal">[FORMAL]</a>
+        </dt>
+        <dd><cite><a href="http://www.w3.org/TR/powder-formal/">Protocol for Web Description Resources (POWDER): Formal Semantics</a></cite>, S. Konstantopoulos, P. Archer. This document is at http://www.w3.org/TR/powder-formal/</dd>
+        <dt>
+          <a id="dr" name="dr">[DR]</a>
+        </dt>
+        <dd><cite><a href="http://www.w3.org/TR/powder-dr/">Protocol for Web Description Resources (POWDER): Description Resources</a></cite>, P Archer, K. Smith, A Perego. This document is at http://www.w3.org/TR/powder-dr/</dd>
+      </dl>
+      <h2 id="ack">Acknowledgements</h2>
+      <p>The editors duly acknowledge contributions made by all members of the POWDER Working Group.</p>
+    </div>
+  </body>
+</html>

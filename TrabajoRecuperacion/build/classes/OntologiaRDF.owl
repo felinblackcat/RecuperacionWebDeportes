@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes"
+     xml:base="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:deportes="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#competidor_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#competidor_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#entrenador_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_actual">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#gerente_de_liga">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_actual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representa_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representa_a">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#altura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#altura">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#años_activo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#años_activo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#edad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#estado_jugador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#estado_jugador">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#fecha_nacimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#fecha_nacimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#lugar_nacimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#lugar_nacimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#numero_de_equipos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#presidente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#presidente">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#sexo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#sexo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#ubicacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona5"/>
+        <deportes:gerente_de_liga rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva1"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</deportes:edad>
+        <deportes:nombre>jose guerra</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona6"/>
+        <deportes:gerente_de_liga rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva2"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</deportes:edad>
+        <deportes:nombre>adam silver</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona7"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</deportes:edad>
+        <deportes:nombre>amanda duffy</deportes:nombre>
+        <deportes:sexo>mujer</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</deportes:edad>
+        <deportes:nombre>albert costa</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</deportes:edad>
+        <deportes:nombre>director liga bbva</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</deportes:edad>
+        <deportes:nombre>director nba adam silver</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#Persona7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#persona"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</deportes:edad>
+        <deportes:nombre>directora national women soccer league amanda duffy</deportes:nombre>
+        <deportes:sexo>mujer</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta5"/>
+        <deportes:equipo_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo1"/>
+        <deportes:liga_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva1"/>
+        <deportes:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">170</deportes:altura>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</deportes:edad>
+        <deportes:lugar_nacimiento>argentina</deportes:lugar_nacimiento>
+        <deportes:nombre>lionel messi</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta6"/>
+        <deportes:equipo_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo3"/>
+        <deportes:liga_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva2"/>
+        <deportes:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">206</deportes:altura>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</deportes:edad>
+        <deportes:lugar_nacimiento>estados unidos</deportes:lugar_nacimiento>
+        <deportes:nombre>lebron james</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta7"/>
+        <deportes:equipo_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo5"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</deportes:edad>
+        <deportes:lugar_nacimiento>kenia</deportes:lugar_nacimiento>
+        <deportes:nombre>chris froome</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <deportes:equipo_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo4"/>
+        <deportes:liga_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva3"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</deportes:edad>
+        <deportes:lugar_nacimiento>estados unidos</deportes:lugar_nacimiento>
+        <deportes:nombre>alex morgan</deportes:nombre>
+        <deportes:sexo>mujer</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <deportes:equipo_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo1"/>
+        <deportes:liga_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva1"/>
+        <deportes:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">188</deportes:altura>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</deportes:edad>
+        <deportes:lugar_nacimiento>argentina</deportes:lugar_nacimiento>
+        <deportes:nombre>la pulga</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <deportes:equipo_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo3"/>
+        <deportes:liga_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva2"/>
+        <deportes:altura rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">206</deportes:altura>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</deportes:edad>
+        <deportes:lugar_nacimiento>estados unidos</deportes:lugar_nacimiento>
+        <deportes:nombre>king james</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#atleta"/>
+        <deportes:equipo_actual rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo4"/>
+        <deportes:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</deportes:edad>
+        <deportes:lugar_nacimiento>kenia</deportes:lugar_nacimiento>
+        <deportes:nombre>chris clive froome</deportes:nombre>
+        <deportes:sexo>hombre</deportes:sexo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo5"/>
+        <deportes:nombre>barcelona</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</deportes:numero_de_equipos>
+        <deportes:ubicacion>barcelona</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo6"/>
+        <deportes:nombre>los angeles lakers</deportes:nombre>
+        <deportes:ubicacion>los angeles</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo7"/>
+        <deportes:nombre>orlando city</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:ubicacion>orlando</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</deportes:numero_de_equipos>
+        <deportes:numero_de_equipos>Sky</deportes:numero_de_equipos>
+        <deportes:ubicacion>reino unido</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo7"/>
+        <deportes:nombre>futbol club barcelona</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:ubicacion>españa</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <deportes:nombre>Equipo de baloncesto lakers</deportes:nombre>
+        <deportes:ubicacion>estados unidos</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo"/>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</deportes:numero_de_equipos>
+        <deportes:numero_de_equipos>orlando city soccer club</deportes:numero_de_equipos>
+        <deportes:ubicacion>estados unidos</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva1"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva5"/>
+        <deportes:representa_a rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo1"/>
+        <deportes:nombre>barcelona a</deportes:nombre>
+        <deportes:ubicacion>barcelona</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo6"/>
+        <deportes:representa_a rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo1"/>
+        <deportes:nombre>barcelona b</deportes:nombre>
+        <deportes:ubicacion>barcelona</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva2"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva6"/>
+        <deportes:representa_a rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo2"/>
+        <deportes:nombre>los angeles</deportes:nombre>
+        <deportes:nombre>los angeles lakers</deportes:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva3"/>
+        <deportes:representa_a rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo3"/>
+        <deportes:nombre>orlando pride</deportes:nombre>
+        <deportes:ubicacion>orlando</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <deportes:representa_a rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo4"/>
+        <deportes:nombre>team ineos</deportes:nombre>
+        <deportes:ubicacion>reino unido</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <deportes:representa_a rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo1"/>
+        <deportes:ubicacion>españa</deportes:ubicacion>
+        <deportes:ubicacion>filial club barcelona</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva1"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva5"/>
+        <deportes:representa_a rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo4"/>
+        <deportes:ubicacion>reino unido</deportes:ubicacion>
+        <deportes:ubicacion>team sky</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva5"/>
+        <deportes:nombre>liga bbva</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</deportes:numero_de_equipos>
+        <deportes:ubicacion>españa</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva6"/>
+        <deportes:nombre>nba</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</deportes:numero_de_equipos>
+        <deportes:ubicacion>estados unidos</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <deportes:gerente_de_liga rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva3"/>
+        <deportes:nombre>national women soccer league</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</deportes:numero_de_equipos>
+        <deportes:ubicacion>estados unidos</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva7"/>
+        <deportes:nombre>copa davis</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</deportes:numero_de_equipos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <deportes:nombre>primera division del futbol español</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</deportes:numero_de_equipos>
+        <deportes:ubicacion>españa</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <deportes:nombre>national basketball association</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</deportes:numero_de_equipos>
+        <deportes:ubicacion>estados unidos</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#liga_deportiva"/>
+        <deportes:nombre>david cup</deportes:nombre>
+        <deportes:numero_de_equipos rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</deportes:numero_de_equipos>
+        <deportes:ubicacion>australia</deportes:ubicacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante5"/>
+        <deportes:entrenador_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo1"/>
+        <deportes:fecha_nacimiento>27/09/1958</deportes:fecha_nacimiento>
+        <deportes:nombre>quique setien</deportes:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante6"/>
+        <deportes:entrenador_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo3"/>
+        <deportes:fecha_nacimiento>21/06/1973</deportes:fecha_nacimiento>
+        <deportes:nombre>frank vogel</deportes:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <deportes:entrenador_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo5"/>
+        <deportes:fecha_nacimiento>23/04/1979</deportes:fecha_nacimiento>
+        <deportes:nombre>nicolas portal</deportes:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante7"/>
+        <deportes:entrenador_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo4"/>
+        <deportes:fecha_nacimiento>23/03/1983</deportes:fecha_nacimiento>
+        <deportes:nombre>marc skinner</deportes:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <deportes:competidor_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo1"/>
+        <deportes:fecha_nacimiento>27/09/1958</deportes:fecha_nacimiento>
+        <deportes:nombre>entrenador fc barcelona</deportes:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <deportes:entrenador_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo3"/>
+        <deportes:lugar_nacimiento>21/06/1973</deportes:lugar_nacimiento>
+        <deportes:nombre>entrenador los angeles lakers</deportes:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#representante"/>
+        <deportes:entrenador_de rdf:resource="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo4"/>
+        <deportes:fecha_nacimiento>23/03/1983</deportes:fecha_nacimiento>
+        <deportes:lugar_nacimiento>entrenador orlando pride</deportes:lugar_nacimiento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#club_deportivo4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jhonier/ontologies/2020/1/deportes#equipo_deportivo7"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

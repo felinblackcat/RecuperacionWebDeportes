@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://www.sport.com" uri="sport.com/index"/>
+    <system systemId="http://www.w3.org/2007/05/powder-s" uri="www.w3.org/2007/05/powder-s"/>
+    <system systemId="http://open.vocab.org/terms/" uri="open.vocab.org/terms/index"/>
+    <system systemId="http://www.w3.org/ns/prov" uri="www.w3.org/ns/prov"/>
+</catalog>
